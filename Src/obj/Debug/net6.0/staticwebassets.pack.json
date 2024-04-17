@@ -1,0 +1,2325 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EFID_V2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EFID_V2.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\Addtional.css",
+      "PackagePath": "staticwebassets\\css\\Addtional.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ace-ie.min.css",
+      "PackagePath": "staticwebassets\\css\\ace-ie.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ace-part2.min.css",
+      "PackagePath": "staticwebassets\\css\\ace-part2.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ace-rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\ace-rtl.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ace-skins.min.css",
+      "PackagePath": "staticwebassets\\css\\ace-skins.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ace.min.css",
+      "PackagePath": "staticwebassets\\css\\ace.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-colorpicker.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-colorpicker.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-datepicker3.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker3.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-duallistbox.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-duallistbox.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-editable.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-editable.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-multiselect.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-multiselect.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap-timepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-timepicker.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\.editorconfig",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\.editorconfig"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\.gitattributes",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\.gitattributes"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\.gitignore",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\.gitignore"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\.hound.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\.hound.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\.travis.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\.travis.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\CHANGELOG.md"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\CNAME",
+      "PackagePath": "staticwebassets\\css\\bootstrap3"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\CONTRIBUTING.md",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\CONTRIBUTING.md"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\Gemfile",
+      "PackagePath": "staticwebassets\\css\\bootstrap3"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\Gemfile.lock",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\Gemfile.lock"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\Gruntfile.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\Gruntfile.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\ISSUE_TEMPLATE.md",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\ISSUE_TEMPLATE.md"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\LICENSE",
+      "PackagePath": "staticwebassets\\css\\bootstrap3"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\README.md",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\README.md"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\_config.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\_config.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\bower.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\bower.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\composer.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\composer.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\js\\bootstrap.min2.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\js\\bootstrap.min2.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\dist\\js\\npm.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\dist\\js\\npm.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\LICENSE",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\browser-bugs.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\browser-bugs.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\browser-features.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\browser-features.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\core-team.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\core-team.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\glyphicons.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\glyphicons.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\sass-team.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\sass-team.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\showcase.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\showcase.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_data\\translations.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_data\\translations.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\ads.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\ads.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\alerts.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\alerts.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\badges.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\badges.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\breadcrumbs.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\breadcrumbs.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\button-dropdowns.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\button-dropdowns.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\button-groups.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\button-groups.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\dropdowns.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\dropdowns.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\glyphicons.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\glyphicons.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\input-groups.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\input-groups.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\jumbotron.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\jumbotron.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\labels.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\labels.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\list-group.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\list-group.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\media.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\media.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\navbar.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\navbar.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\navs.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\navs.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\page-header.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\page-header.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\pagination.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\pagination.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\panels.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\panels.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\progress-bars.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\progress-bars.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\responsive-embed.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\responsive-embed.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\thumbnails.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\thumbnails.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\components\\wells.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\components\\wells.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\buttons.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\buttons.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\code.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\code.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\forms.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\forms.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\grid.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\grid.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\helpers.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\helpers.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\images.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\images.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\less.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\less.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\overview.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\overview.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\responsive-utilities.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\responsive-utilities.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\sass.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\sass.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\tables.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\tables.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\css\\type.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\css\\type.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\customizer-variables.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\customizer-variables.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\footer.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\footer.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\accessibility.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\accessibility.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\browser-device-support.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\browser-device-support.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\community.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\community.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\disabling-responsiveness.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\disabling-responsiveness.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\download.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\download.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\examples.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\examples.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\grunt.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\grunt.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\license.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\license.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\template.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\template.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\third-party-support.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\third-party-support.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\tools.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\tools.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\translations.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\translations.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\getting-started\\whats-included.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\getting-started\\whats-included.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\header.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\header.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\affix.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\affix.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\alerts.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\alerts.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\buttons.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\buttons.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\carousel.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\carousel.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\collapse.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\collapse.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\dropdowns.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\dropdowns.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\modal.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\modal.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\overview.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\overview.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\popovers.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\popovers.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\scrollspy.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\scrollspy.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\tabs.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\tabs.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\tooltips.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\tooltips.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\js\\transitions.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\js\\transitions.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\about.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\about.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\components.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\components.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\css.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\css.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\customize.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\customize.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\getting-started.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\getting-started.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\javascript.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\javascript.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\main.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\main.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_includes\\nav\\migration.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_includes\\nav\\migration.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_layouts\\default.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_layouts\\default.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_layouts\\home.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_layouts\\home.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_plugins\\bridge.rb",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_plugins\\bridge.rb"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_plugins\\bugify.rb",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_plugins\\bugify.rb"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_pug\\customizer-nav.pug",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_pug\\customizer-nav.pug"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\_pug\\customizer-variables.pug",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\_pug\\customizer-variables.pug"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\about.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\about.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\apple-touch-icon.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-outline.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-outline.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-punchout.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-punchout.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-solid.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\brand\\bootstrap-solid.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\css\\docs.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\css\\docs.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\css\\docs.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\css\\docs.min.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\css\\ie10-viewport-bug-workaround.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\css\\ie10-viewport-bug-workaround.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\css\\src\\docs.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\css\\src\\docs.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\css\\src\\pygments-manni.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\css\\src\\pygments-manni.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\flash\\ZeroClipboard.swf",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\flash\\ZeroClipboard.swf"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\components.png",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\components.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\devices.png",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\devices.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\expo-lyft.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\expo-lyft.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\expo-newsweek.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\expo-newsweek.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\expo-riot.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\expo-riot.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\expo-vogue.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\expo-vogue.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\img\\sass-less.png",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\img\\sass-less.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\customize.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\customize.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\docs.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\docs.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\ie-emulation-modes-warning.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\ie-emulation-modes-warning.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\ie10-viewport-bug-workaround.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\ie10-viewport-bug-workaround.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\ie8-responsive-file-warning.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\ie8-responsive-file-warning.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\raw-files.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\raw-files.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\src\\application.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\src\\application.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\src\\customizer.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\src\\customizer.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\Blob.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\Blob.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\FileSaver.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\FileSaver.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\ZeroClipboard.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\ZeroClipboard.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\anchor.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\anchor.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\autoprefixer.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\autoprefixer.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\holder.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\holder.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\jquery.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\jszip.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\jszip.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\less.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\less.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\assets\\js\\vendor\\uglify.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\assets\\js\\vendor\\uglify.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\browser-bugs.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\browser-bugs.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\components.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\components.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\css.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\css.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\customize.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\customize.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\dist\\js\\npm.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\dist\\js\\npm.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\blog\\blog.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\blog\\blog.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\blog\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\blog\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\carousel\\carousel.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\carousel\\carousel.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\carousel\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\carousel\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\cover\\cover.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\cover\\cover.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\cover\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\cover\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\dashboard\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\dashboard\\dashboard.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\dashboard\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\dashboard\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\grid\\grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\grid\\grid.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\grid\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\grid\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\jumbotron-narrow\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\jumbotron-narrow\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\jumbotron-narrow\\jumbotron-narrow.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\jumbotron-narrow\\jumbotron-narrow.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\jumbotron\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\jumbotron\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\jumbotron\\jumbotron.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\jumbotron\\jumbotron.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\justified-nav\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\justified-nav\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\justified-nav\\justified-nav.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\justified-nav\\justified-nav.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar-fixed-top\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar-fixed-top\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar-fixed-top\\navbar-fixed-top.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar-fixed-top\\navbar-fixed-top.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar-static-top\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar-static-top\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar-static-top\\navbar-static-top.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar-static-top\\navbar-static-top.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\navbar\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\navbar\\navbar.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\non-responsive\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\non-responsive\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\non-responsive\\non-responsive.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\non-responsive\\non-responsive.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\offcanvas\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\offcanvas\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\offcanvas\\offcanvas.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\offcanvas\\offcanvas.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\offcanvas\\offcanvas.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\offcanvas\\offcanvas.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\blog.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\blog.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\carousel.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\carousel.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\cover.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\cover.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\dashboard.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\dashboard.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\equal-height-columns.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\equal-height-columns.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\grid.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\grid.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\jumbotron-narrow.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\jumbotron-narrow.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\jumbotron.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\jumbotron.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\justified-nav.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\justified-nav.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar-fixed.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar-fixed.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar-static.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar-static.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\navbar.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\non-responsive.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\non-responsive.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\offcanvas.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\offcanvas.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\sign-in.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\sign-in.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\starter-template.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\starter-template.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\sticky-footer-navbar.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\sticky-footer-navbar.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\sticky-footer.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\sticky-footer.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\screenshots\\theme.jpg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\screenshots\\theme.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\signin\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\signin\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\signin\\signin.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\signin\\signin.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\starter-template\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\starter-template\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\starter-template\\starter-template.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\starter-template\\starter-template.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\sticky-footer-navbar\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\sticky-footer-navbar\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\sticky-footer-navbar\\sticky-footer-navbar.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\sticky-footer-navbar\\sticky-footer-navbar.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\sticky-footer\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\sticky-footer\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\sticky-footer\\sticky-footer.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\sticky-footer\\sticky-footer.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\theme\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\theme\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\theme\\theme.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\theme\\theme.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\tooltip-viewport.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\tooltip-viewport.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\tooltip-viewport.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\examples\\tooltip-viewport\\tooltip-viewport.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\favicon.ico",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\getting-started.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\getting-started.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\javascript.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\javascript.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\migration.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\migration.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\docs\\robots.txt",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\docs\\robots.txt"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\.jshintrc",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\.jshintrc"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\bs-commonjs-generator.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\bs-commonjs-generator.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\bs-glyphicons-data-generator.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\bs-glyphicons-data-generator.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\bs-lessdoc-parser.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\bs-lessdoc-parser.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\bs-raw-files-generator.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\bs-raw-files-generator.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\change-version.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\change-version.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\configBridge.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\configBridge.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\npm-shrinkwrap.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\npm-shrinkwrap.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\grunt\\sauce_browsers.yml",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\grunt\\sauce_browsers.yml"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\.jscsrc",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\.jscsrc"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\.jshintrc",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\.jshintrc"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\affix.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\affix.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\alert.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\alert.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\button.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\button.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\carousel.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\carousel.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\collapse.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\collapse.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\dropdown.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\dropdown.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\modal.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\modal.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\popover.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\popover.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\scrollspy.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\scrollspy.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tab.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tab.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\README.md",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\README.md"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\index.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\index.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\.jshintrc",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\.jshintrc"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\affix.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\affix.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\alert.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\alert.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\button.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\button.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\carousel.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\carousel.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\collapse.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\collapse.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\dropdown.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\dropdown.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\modal.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\modal.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\phantom.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\phantom.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\popover.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\popover.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\scrollspy.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\scrollspy.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\tab.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\tab.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\unit\\tooltip.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\unit\\tooltip.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\vendor\\jquery.min.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\vendor\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\vendor\\qunit.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\vendor\\qunit.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\vendor\\qunit.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\vendor\\qunit.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\affix-with-sticky-footer.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\affix-with-sticky-footer.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\affix.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\affix.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\alert.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\alert.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\button.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\button.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\carousel.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\carousel.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\collapse.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\collapse.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\dropdown.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\dropdown.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\modal.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\modal.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\popover.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\popover.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\scrollspy.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\scrollspy.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\tab.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\tab.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tests\\visual\\tooltip.html",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tests\\visual\\tooltip.html"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\tooltip.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\js\\transition.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\js\\transition.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\.csscomb.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\.csscomb.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\.csslintrc",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\.csslintrc"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\alerts.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\alerts.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\badges.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\badges.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\bootstrap.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\bootstrap.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\breadcrumbs.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\breadcrumbs.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\button-groups.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\button-groups.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\buttons.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\buttons.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\carousel.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\carousel.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\close.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\close.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\code.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\code.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\component-animations.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\component-animations.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\dropdowns.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\dropdowns.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\forms.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\forms.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\glyphicons.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\glyphicons.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\grid.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\grid.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\input-groups.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\input-groups.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\jumbotron.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\jumbotron.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\labels.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\labels.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\list-group.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\list-group.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\media.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\media.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\alerts.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\alerts.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\background-variant.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\background-variant.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\border-radius.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\border-radius.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\buttons.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\buttons.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\center-block.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\center-block.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\clearfix.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\clearfix.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\forms.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\forms.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\gradients.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\gradients.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\grid-framework.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\grid-framework.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\grid.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\grid.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\hide-text.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\hide-text.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\image.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\image.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\labels.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\labels.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\list-group.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\list-group.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\nav-divider.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\nav-divider.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\nav-vertical-align.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\nav-vertical-align.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\opacity.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\opacity.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\pagination.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\pagination.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\panels.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\panels.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\progress-bar.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\progress-bar.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\reset-filter.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\reset-filter.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\reset-text.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\reset-text.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\resize.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\resize.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\responsive-visibility.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\responsive-visibility.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\size.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\size.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\tab-focus.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\tab-focus.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\table-row.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\table-row.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\text-emphasis.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\text-emphasis.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\text-overflow.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\text-overflow.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\mixins\\vendor-prefixes.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\mixins\\vendor-prefixes.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\modals.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\modals.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\navbar.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\navbar.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\navs.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\navs.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\normalize.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\normalize.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\pager.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\pager.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\pagination.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\pagination.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\panels.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\panels.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\popovers.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\popovers.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\print.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\print.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\progress-bars.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\progress-bars.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\responsive-embed.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\responsive-embed.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\responsive-utilities.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\responsive-utilities.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\scaffolding.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\scaffolding.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\tables.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\tables.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\theme.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\theme.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\thumbnails.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\thumbnails.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\tooltip.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\tooltip.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\type.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\type.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\utilities.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\utilities.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\variables.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\variables.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\less\\wells.less",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\less\\wells.less"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\nuget\\MyGet.ps1",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\nuget\\MyGet.ps1"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\nuget\\bootstrap.less.nuspec",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\nuget\\bootstrap.less.nuspec"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\nuget\\bootstrap.nuspec",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\nuget\\bootstrap.nuspec"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\package.js",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\package.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\bootstrap3\\package.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap3\\package.json"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\chosen.min.css",
+      "PackagePath": "staticwebassets\\css\\chosen.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\colorbox.min.css",
+      "PackagePath": "staticwebassets\\css\\colorbox.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\dataTables.uikit.min.css",
+      "PackagePath": "staticwebassets\\css\\dataTables.uikit.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\datepicker3.css",
+      "PackagePath": "staticwebassets\\css\\datepicker\\datepicker3.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ar.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ar.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.az.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.az.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.bg.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.bg.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ca.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ca.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.cs.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.cs.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.cy.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.cy.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.da.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.da.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.de.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.de.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.el.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.el.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.es.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.es.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.et.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.et.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.fa.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.fa.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.fi.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.fi.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.fr.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.fr.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.gl.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.gl.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.he.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.he.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.hr.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.hr.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.hu.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.hu.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.id.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.id.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.is.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.is.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.it.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.it.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ja.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ja.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ka.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ka.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.kk.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.kk.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.kr.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.kr.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.lt.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.lt.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.lv.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.lv.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.mk.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.mk.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ms.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ms.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.nb.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.nb.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.nl-BE.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.nl-BE.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.nl.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.nl.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.no.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.no.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.pl.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.pl.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.pt-BR.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.pt-BR.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.pt.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.pt.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ro.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ro.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.rs-latin.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.rs-latin.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.rs.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.rs.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ru.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ru.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.sk.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.sk.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.sl.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.sl.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.sq.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.sq.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.sv.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.sv.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.sw.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.sw.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.th.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.th.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.tr.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.tr.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.ua.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.ua.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.vi.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.vi.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.zh-CN.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.zh-CN.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\datepicker\\locales\\bootstrap-datepicker.zh-TW.js",
+      "PackagePath": "staticwebassets\\css\\datepicker\\locales\\bootstrap-datepicker.zh-TW.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\daterangepicker.min.css",
+      "PackagePath": "staticwebassets\\css\\daterangepicker.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\css\\dropzone.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\fonts.googleapis.com.css",
+      "PackagePath": "staticwebassets\\css\\fonts.googleapis.com.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\css\\fullcalendar.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\jquery-ui.custom.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.custom.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\jquery.gritter.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.gritter.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\nav_bg.png",
+      "PackagePath": "staticwebassets\\css\\nav_bg.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\prettify.min.css",
+      "PackagePath": "staticwebassets\\css\\prettify.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\richtext.min.css",
+      "PackagePath": "staticwebassets\\css\\richtext.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\richtext.scss",
+      "PackagePath": "staticwebassets\\css\\richtext.scss"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\ui.jqgrid.min.css",
+      "PackagePath": "staticwebassets\\css\\ui.jqgrid.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\css\\uikit.min.css",
+      "PackagePath": "staticwebassets\\css\\uikit.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\JsBarcode.all.min.js",
+      "PackagePath": "staticwebassets\\js\\JsBarcode.all.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\ace-editable.min.js",
+      "PackagePath": "staticwebassets\\js\\ace-editable.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\ace-elements.min.js",
+      "PackagePath": "staticwebassets\\js\\ace-elements.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\ace-extra.min.js",
+      "PackagePath": "staticwebassets\\js\\ace-extra.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\ace.min.js",
+      "PackagePath": "staticwebassets\\js\\ace.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\autosize.min.js",
+      "PackagePath": "staticwebassets\\js\\autosize.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootbox.js",
+      "PackagePath": "staticwebassets\\js\\bootbox.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-colorpicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-colorpicker.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-datetimepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-datetimepicker.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-editable.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-editable.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-markdown.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-markdown.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-multiselect.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-multiselect.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-tag.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-tag.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-timepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-timepicker.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap-wysiwyg.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-wysiwyg.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\buttons.colVis.min.js",
+      "PackagePath": "staticwebassets\\js\\buttons.colVis.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\js\\buttons.flash.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\js\\buttons.html5.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\js\\buttons.print.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\chosen-patch.js",
+      "PackagePath": "staticwebassets\\js\\chosen-patch.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\chosen.jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\chosen.jquery.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\js\\dataTables.select.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\daterangepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\daterangepicker.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\js\\dropzone.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\excanvas.min.js",
+      "PackagePath": "staticwebassets\\js\\excanvas.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\js\\fullcalendar.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\grid.locale-en.js",
+      "PackagePath": "staticwebassets\\js\\grid.locale-en.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\holder.min.js",
+      "PackagePath": "staticwebassets\\js\\holder.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\html5shiv.min.js",
+      "PackagePath": "staticwebassets\\js\\html5shiv.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-1.11.3.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.11.3.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-1.12.4.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.12.4.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-2.1.4.min.file",
+      "PackagePath": "staticwebassets\\js\\jquery-2.1.4.min.file"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-2.1.4.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.1.4.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-3.5.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.5.1.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-additional-methods.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-barcode.js",
+      "PackagePath": "staticwebassets\\js\\jquery-barcode.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-typeahead.js",
+      "PackagePath": "staticwebassets\\js\\jquery-typeahead.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-ui.custom.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.custom.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.bootstrap-duallistbox.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.bootstrap-duallistbox.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.colorbox.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.colorbox.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.dataTables.bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.easypiechart.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easypiechart.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.flot.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.flot.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.flot.pie.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.flot.pie.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.flot.resize.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.flot.resize.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.gritter.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.gritter.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.hotkeys.index.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.hotkeys.index.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.inputlimiter.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.inputlimiter.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.jqGrid.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.jqGrid.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.knob.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.knob.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.maskedinput.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.maskedinput.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.mobile.custom.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.mobile.custom.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.nestable.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nestable.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.raty.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.raty.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.richtext.js",
+      "PackagePath": "staticwebassets\\js\\jquery.richtext.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.richtext.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.richtext.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.sparkline.index.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.sparkline.index.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.ui.touch-punch.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.ui.touch-punch.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\jquery3.5.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery3.5.1.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\markdown.min.js",
+      "PackagePath": "staticwebassets\\js\\markdown.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\js\\moment.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\prettify.min.js",
+      "PackagePath": "staticwebassets\\js\\prettify.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\respond.min.js",
+      "PackagePath": "staticwebassets\\js\\respond.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\spin.js",
+      "PackagePath": "staticwebassets\\js\\spin.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\spinbox.min.js",
+      "PackagePath": "staticwebassets\\js\\spinbox.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\tree.min.js",
+      "PackagePath": "staticwebassets\\js\\tree.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\js\\wizard.min.js",
+      "PackagePath": "staticwebassets\\js\\wizard.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\404-Icon.png",
+      "PackagePath": "staticwebassets\\lib\\images\\404-Icon.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\add.png",
+      "PackagePath": "staticwebassets\\lib\\images\\add.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\add_button.png",
+      "PackagePath": "staticwebassets\\lib\\images\\add_button.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\border_ptm.png",
+      "PackagePath": "staticwebassets\\lib\\images\\border_ptm.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\calbtn.gif",
+      "PackagePath": "staticwebassets\\lib\\images\\calbtn.gif"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\calendar.png",
+      "PackagePath": "staticwebassets\\lib\\images\\calendar.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\del.png",
+      "PackagePath": "staticwebassets\\lib\\images\\del.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\delete.png",
+      "PackagePath": "staticwebassets\\lib\\images\\delete.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\forward.png",
+      "PackagePath": "staticwebassets\\lib\\images\\forward.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\lib\\images\\loading.gif"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\logo.PNG",
+      "PackagePath": "staticwebassets\\lib\\images\\logo.PNG"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\logo_ptm.png",
+      "PackagePath": "staticwebassets\\lib\\images\\logo_ptm.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\logo_ptpr_b.png",
+      "PackagePath": "staticwebassets\\lib\\images\\logo_ptpr_b.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\logo_ptpr_s.png",
+      "PackagePath": "staticwebassets\\lib\\images\\logo_ptpr_s.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\next.png",
+      "PackagePath": "staticwebassets\\lib\\images\\next.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\no.png",
+      "PackagePath": "staticwebassets\\lib\\images\\no.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\perwira2.png",
+      "PackagePath": "staticwebassets\\lib\\images\\perwira2.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\posted.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\posted.jpg"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\posted.png",
+      "PackagePath": "staticwebassets\\lib\\images\\posted.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\pre.png",
+      "PackagePath": "staticwebassets\\lib\\images\\pre.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\received-stamp-hi.png",
+      "PackagePath": "staticwebassets\\lib\\images\\received-stamp-hi.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\received.png",
+      "PackagePath": "staticwebassets\\lib\\images\\received.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\work_14.png",
+      "PackagePath": "staticwebassets\\lib\\images\\work_14.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\images\\yes.png",
+      "PackagePath": "staticwebassets\\lib\\images\\yes.png"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.3.min.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.3.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.3.min.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.3.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.4.min.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.4.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.4.min.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.4.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.5.rc1.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.5.rc1.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.5.rc1.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.5.rc1.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.5.rc1.min.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.5.rc1.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.5.rc1.min.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.5.rc1.min.js"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui-1.5.rc1.min_back.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui-1.5.rc1.min_back.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui.min.css",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui.min.css"
+    },
+    {
+      "Id": "E:\\Pertamina Retail\\Github\\EFID-V2.0\\Src\\wwwroot\\lib\\w2ui\\w2ui.min.js",
+      "PackagePath": "staticwebassets\\lib\\w2ui\\w2ui.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EFID_V2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.EFID_V2.props",
+      "PackagePath": "build\\EFID_V2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.EFID_V2.props",
+      "PackagePath": "buildMultiTargeting\\EFID_V2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.EFID_V2.props",
+      "PackagePath": "buildTransitive\\EFID_V2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

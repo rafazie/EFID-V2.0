@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Src.Models;
+using EFID_V2.Models;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Src.Controllers
 {
@@ -15,18 +17,16 @@ namespace Src.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var userIdentity = HttpContext.User.Identity;
+            if (userIdentity.IsAuthenticated)
+            {
+                return View(userIdentity);
+            }
+            else
+            {
+                return RedirectToAction("Logout", "User");
+            }
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

@@ -8,11 +8,11 @@
     }
   },
   "profiles": {
-    "Src": {
+    "EFID-V2": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7258;http://localhost:5188",
+      "applicationUrl": "https://localhost:7070;http://localhost:5188",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

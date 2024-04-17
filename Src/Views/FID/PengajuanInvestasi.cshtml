@@ -1,0 +1,52 @@
+﻿@using EFID_V2.Models;
+@model List<vFID>;
+
+<div>
+    <div class="table-responsive">
+        <table id="dataTableExample" class="table table-hover mb-0 mt-4">
+            <thead>
+                <tr>
+                    <th class="pt-0">Status</th>
+                    <th class="pt-0">Nomor FID</th>
+                    <th class="pt-0">Judul FID</th>
+                    <th class="pt-0">Thn. Anggaran</th>
+                    <th class="pt-0">Nilai ABI</th>
+                    <th class="pt-0">Fungsi Pengusul</th>
+                    <th class="pt-0">Created By</th>
+                    <th class="pt-0">Created Date</th>
+                    <th class="pt-0">Update User</th>
+                    <th class="pt-0">Update Date</th>
+                    <th class="pt-0">SLA Default</th>
+                    <th class="pt-0">Realisasi SLA</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var list in Model)
+                    {
+                        <tr onclick="showAlert()">
+                            <td class="text-center">@Html.Raw(list.Status)</td>
+                            <td class="text-left">@list.NoFID</td>
+                            <td>@list.Judulfid</td>
+                            <td>@list.TahunAnggaran</td>
+                            <td>@String.Format("{0:n0}", list.NilaiABI)</td>
+                            <td>@list.Fungsipengusul</td>
+                            <td>@list.CreatedBy</td>
+                            <td>@DateTime.Parse(list.CreatedDate.Value.ToString("dd-MMMM-yyyy"))</td>
+                            <td>@list.UpdateUser</td>
+                            <td>@DateTime.Parse(list.UpdateDate.Value.ToString("dd-MMMM-yyyy"))</td>
+                            <td>@list.SlaDefault</td>
+                            <td>@list.SlaRealisasi</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function showAlert() {
+        alert("Ini Row Yang di Klik");
+    }
+</script>

@@ -1,0 +1,55 @@
+﻿@using System.Data.SqlClient;
+@using System.Data;
+
+<div id="sidebar" class="sidebar menu-min responsive">
+
+    <ul class="nav nav-list">
+
+
+
+        <li @{
+            if (ViewBag.ActiveMenu == "Home")
+            {
+                <text> class="active open hover" </text>
+            }
+            else
+            {
+                <text> class="hover" </text>
+            }
+        }>
+
+            <a href="@Url.Content("~/Home")" onclick="render_wait()">
+
+                <i class="menu-icon fa fa-home" aria-hidden="true" style="color:#6eaad5;"></i>
+                <span class="menu-text"> Home </span>
+            </a>
+
+        </li>
+
+        <li @{
+            if (ViewBag.ActiveMenu == "FID")
+            {
+                <text> class="active open hover" </text>
+            }
+            else
+            {
+                <text> class="hover" </text>
+            }
+        }>
+
+            <a href="@Url.Content("~/FID/vFID")" onclick="render_wait()">
+
+                <i class="menu-icon fa fa-file" aria-hidden="true" style="color:#97b255;"></i>
+                <span class="menu-text"> FID </span>
+            </a>
+
+        </li>
+
+
+    </ul><!-- /.nav-list -->
+
+
+
+
+</div>
+

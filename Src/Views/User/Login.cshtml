@@ -1,0 +1,305 @@
+﻿@using Newtonsoft.Json;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Pertamina Retail | E-FID Login</title>
+
+    <meta name="description" content="User login page" />
+    <link rel="icon" href="~/lib/images/logo_ptm.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="~/css//ace.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <script src="~/js/ace-extra.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+        .login-layout {
+            background-color: #5D8AA5;
+            background-image: url("~/lib/Images/work_14.png"),url("~/lib/Images/Icon/folder0.png");
+            background-size: 35%,25%;
+            background-repeat: no-repeat,no-repeat;
+            background-position: 20% 100%,30% 30%;
+        }
+
+        .login-box {
+            border: 0px dashed #dedede;
+            border-top: 0px solid yellowgreen;
+            min-height: 250px;
+            background: yellowgreen;
+            background-color: #9acd32;
+        }
+
+
+        #mod_err .modal-dialog {
+            margin-top: 15%;
+        }
+
+        #id-text2 {
+            color: #666;
+        }
+
+        #main_login_box {
+            float: right;
+            border-left: 0px solid #5D8AA5;
+            padding-top: 5%;
+            background-color: white;
+            width: 40%;
+            margin-right: 0px;
+        }
+
+        @@media only screen and (max-width: 800px) {
+
+            #main_login_box {
+                width: 100%;
+                border-bottom-left-radius: 0px;
+                border-left: 6px solid #5D8AA5;
+            }
+        }
+
+        @@media only screen and (max-width: 1200px) {
+
+            #main_login_box {
+                width: 100%;
+                border-bottom-left-radius: 0px;
+                border-left: 6px solid #5D8AA5;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body class="login-layout">
+    <div class="main-container" id="main_login_box">
+        @*<div class="main-content">*@
+        @*<div class="row">*@
+        @*<div class="col-sm-10 col-sm-offset-1">*@
+        <div class="login-container">
+            <div class="center">
+                <div style="border-bottom:1px dashed #dedede;padding-bottom:10px;margin-bottom:5px;">
+                    <img src="~/lib/Images/Logo_ptm.png" style="width:50px;"> &nbsp;<span style="font-size:20px;color:#333;font-weight:normal;font-family:Arial;color:#42aaf5;">E-FID</span><br />
+                </div>
+
+                <span style="font-size:12px;color:#333;">( E-Final Invesment Decision V.1.0)</span>
+            </div>
+
+
+
+            <div class="position-relative">
+                <img src="~/lib/images/border_ptm.png" style="width:100%;height:4px;margin-top:10px;">
+                <div id="login-box" class="login-box visible" style="margin-top:0px;">
+
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <h4 style="font-size:12px;" class="header blue lighter bigger">
+                                Please Enter Your Login Information
+                            </h4>
+                            <div class="space-6"></div>
+
+                            @{
+                                if (TempData["msg"] != null)
+                                {
+                                    <div class="alert alert-danger" id="alrt">
+                                        <strong>Whoops!</strong> There were some problems with your input.<br>
+                                        <ul>
+                                            <li>@TempData["msg"]</li>
+                                        </ul>
+                                    </div>
+                                }
+                            }
+
+                            <form method="POST" name="form_login"
+                                  action="@Url.Content("~/User/Login")"
+                                  id="form_login" onsubmit=" $('#loading_login').show(); $('#form_login').show();">
+                                <fieldset>
+
+                                    <label class="block clearfix">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="text" class="form-control" placeholder="User Name" name="UserName" required="yes" />
+                                            <i class="ace-icon fa fa-user"></i>
+                                        </span>
+                                    </label>
+
+                                    <label class="block clearfix">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="password" class="form-control" placeholder="Password" name="Password" required="yes" />
+                                            <i class="ace-icon fa fa-lock"></i>
+                                        </span>
+                                    </label>
+
+                                    <div class="clearfix">
+
+
+
+                                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
+                                            <i class="ace-icon fa fa-key"></i>
+                                            <span class="bigger-110">Login</span>
+                                        </button>
+                                    </div>
+
+
+
+
+                                    <h4 style="font-size:12px;margin-top:30%;" class="header black bigger">
+                                        <span style="color:#5D8AA5;font-size:13px;">Pertamina Retail &copy; 2022</span>
+                                    </h4>
+
+
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mod_err" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="background:white;">
+                    <h4 class="modal-title" style="font-size:13px;"><img src="../../Content/Images/logo_ptpr.png" style="width:100px;" /> &nbsp;&nbsp;</h4>
+                </div>
+                <div class="modal-body">
+                    <span style="color:red;font-size:12px;" id="pesan_error"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function resizeInvoiceBox() {
+            $('#main_login_box').css('height', window.innerHeight);
+            $('#login-container').css('height', window.innerHeight);
+        }
+
+        $(window).resize(function () {
+
+            resizeInvoiceBox();
+
+        });
+
+
+        resizeInvoiceBox();
+
+
+    </script>
+
+    <script type="text/javascript">
+        if ('ontouchstart' in document.documentElement) document.write("<script src='<?php echo base_url();?>assets/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+
+    <!-- inline scripts related to this page -->
+    <script type="text/javascript">
+
+
+
+
+        jQuery(function ($) {
+            $(document).on('click', '.toolbar a[data-target]', function (e) {
+                e.preventDefault();
+                var target = $(this).data('target');
+                $('.widget-box.visible').removeClass('visible'); //hide others
+                $(target).addClass('visible'); //show target
+            });
+        });
+
+
+
+        //you don't need this, just used for changing background
+        jQuery(function ($) {
+            $('#btn-login-dark').on('click', function (e) {
+                $('body').attr('class', 'login-layout');
+                $('#id-text2').attr('class', 'white');
+                $('#id-company-text').attr('class', 'blue');
+
+                e.preventDefault();
+            });
+            $('#btn-login-light').on('click', function (e) {
+                $('body').attr('class', 'login-layout light-login');
+                $('#id-text2').attr('class', 'grey');
+                $('#id-company-text').attr('class', 'blue');
+
+                e.preventDefault();
+            });
+            $('#btn-login-blur').on('click', function (e) {
+                $('body').attr('class', 'login-layout blur-login');
+                $('#id-text2').attr('class', 'white');
+                $('#id-company-text').attr('class', 'light-blue');
+
+                e.preventDefault();
+            });
+
+        });
+
+
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        function cek_errr_login() {
+
+            if (getCookie('ErrorCookie') != '') {
+
+                $("#pesan_error").html(getCookie('ErrorCookie'));
+                $("#mod_err").modal("show");
+                setCookie('ErrorCookie', '', '1');
+
+            }
+
+        }
+
+        cek_errr_login();
+
+    </script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-namespace EFID_V2._0.Models
+namespace Src.Models
 {
     public class ErrorViewModel
     {

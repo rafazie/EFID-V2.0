@@ -1,8 +1,8 @@
-﻿using EFID_V2._0.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Src.Models;
 using System.Diagnostics;
 
-namespace EFID_V2._0.Controllers
+namespace Src.Controllers
 {
     public class HomeController : Controller
     {

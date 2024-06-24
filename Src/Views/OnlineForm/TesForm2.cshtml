@@ -1,0 +1,131 @@
+﻿@using SimplifikasiFID.Models;
+@model  M_UploadFiles
+@{
+    //Layout = null;
+    var doDate = DateTime.Now.ToString("dd MMMM yyyy");
+}
+@{
+    string UserId = User.Identity.Name.ToString();
+    //UserId = "MAN" + UserId;
+    var roles = new SimplifikasiFID.Classes.UserRoleProvider();
+
+    bool sts = false;
+
+    if (UserId == "testing.fid2")
+    {
+        sts = true;
+    };
+
+}
+
+<html>
+<head>   
+</head>
+<body>
+
+    <div>
+        @Html.Raw(Model.HtmlTag)
+    </div>
+    @*<button class="btn btn-success" type="button" onclick="RemoveButtonApprove()">tess</button>*@
+</body>
+</html>
+
+<script>
+    function RemoveButtonApprove() {
+        var table = document.getElementById('tblPS');
+        var sections = table.querySelectorAll('section');
+        var buttons = table.getElementsByTagName('button');
+        var fileInputs = table.querySelectorAll('input[type="file"]');
+        var containers = table.querySelectorAll('.dynfrm td');
+
+        buttons = Array.prototype.slice.call(buttons);
+        buttons.forEach(function (button) {
+            /*button.parentNode.removeChild(button);*/
+            button.style.display = 'none';
+        });
+
+        fileInputs.forEach(function (fileInput) {
+            /*fileInput.parentNode.removeChild(fileInput);*/
+            fileInput.style.display = 'none';
+        });
+
+        sections.forEach(function (section) {
+            /* section.parentNode.removeChild(section);*/
+            section.style.display = 'none';
+        });
+
+        containers.forEach(function (td) {
+            td.style.borderColor = 'transparent';
+        });
+
+
+        var table2 = document.getElementById('tbl-ps-sgtr');
+        var sections2 = table2.querySelectorAll('section');
+        var buttons2 = table2.getElementsByTagName('button');
+        var fileInputs2 = table2.querySelectorAll('input[type="file"]');
+        var containers2 = table2.querySelectorAll('.dynfrm td');
+        var row = document.getElementById("prf-place");
+
+        buttons2 = Array.prototype.slice.call(buttons2);
+        buttons2.forEach(function (button) {
+            /*button.parentNode.removeChild(button);*/
+            button.style.display = 'none';
+        });
+
+        fileInputs2.forEach(function (fileInputs2) {
+            /*fileInput.parentNode.removeChild(fileInput);*/
+            fileInputs2.style.display = 'none';
+        });
+
+        sections2.forEach(function (sections2) {
+            /* section.parentNode.removeChild(section);*/
+            sections2.style.display = 'none';
+        });
+
+        containers2.forEach(function (td) {
+            td.style.borderColor = 'transparent';
+        });
+
+        if (row) {
+            row.style.display = "none";
+        }
+
+
+        var table3 = document.getElementById('tbl-cba-sgtr');
+        if (table3) {
+            var sections3 = table3.querySelectorAll('section');
+            var buttons3 = table3.getElementsByTagName('button');
+            var fileInputs3 = table3.querySelectorAll('input[type="file"]');
+            var containers3 = table3.querySelectorAll('.dynfrm td');
+            var row2 = document.getElementById("prf-place-cba");
+
+            buttons3 = Array.prototype.slice.call(buttons2);
+            buttons3.forEach(function (button) {
+                /*button.parentNode.removeChild(button);*/
+                button.style.display = 'none';
+            });
+
+            fileInputs3.forEach(function (fileInputs3) {
+                /*fileInput.parentNode.removeChild(fileInput);*/
+                fileInputs3.style.display = 'none';
+            });
+
+            sections3.forEach(function (sections3) {
+                /* section.parentNode.removeChild(section);*/
+                sections3.style.display = 'none';
+            });
+
+            containers3.forEach(function (td) {
+                td.style.borderColor = 'transparent';
+            });
+
+            if (row2) {
+                row2.style.display = "none";
+            }
+        }
+
+    }
+</script>
+
+
+

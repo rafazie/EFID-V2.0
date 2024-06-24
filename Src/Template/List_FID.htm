@@ -1,0 +1,203 @@
+﻿<style>
+    .page_detail {
+        overflow-y: scroll;
+    }
+
+    .form-control-mod-dta {
+        font-size: 12px;
+        width: 100%;
+        height: 30px;
+    }
+
+    .tbl-form td {
+        padding: 6px;
+    }
+
+    .judul-form {
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 5px;
+    }
+
+    .tombol {
+        border: 1px solid #dedede;
+        padding: 2px;
+        width: 65px;
+        background-color: #dedede;
+        color: Black;
+    }
+
+
+
+    #preview_file {
+        height: 100%;
+    }
+
+    #frame_preview {
+        width: 489px;
+        height: 486px;
+    }
+
+    form.uploadButton {
+        position: relative;
+        display: flex;
+    }
+
+
+    #button_upload {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+    }
+</style>
+
+<div id="base_info">
+    <div class='judul-form'>FID Information</div>
+    <div style="padding:10px;">
+        <table class="tbl-form" width="100%">
+            <tr>
+                <td>NOMOR FID</td>
+                <td width="2px">:</td>
+                <td colspan="2">
+                    <input type="text" id="doc_no" class="form-control-mod-dta" />
+                </td>
+            </tr>
+            <tr>
+                <td>JUDUL FID</td>
+                <td width="2px">:</td>
+                <td colspan="2">
+                    <input type="text" id="doc_title" class="form-control-mod-dta" />
+                </td>
+            </tr>
+            <tr>
+                <td>Fungsi Pengusul</td>
+                <td width="2px">:</td>
+                <td colspan="2">
+                    <input type="text" id="fungsi_usul" class="form-control-mod-dta" />
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Usulan</td>
+                <td width="2px">:</td>
+                <td colspan="2">
+                    <select name="Jenis" id="Jenis" class="form-control-mod-dta">
+                        <option value="BD">BD</option>
+                        <option value="Non BD">Non BD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td id="fid">Draft FID</td>
+                <td id="fid1">:</td>
+                <td>
+                    <input type="text" id="text_file1" class="form-control-mod-dta">
+                </td>
+                <td>
+                    <input type="file" id="FileUpload1" class="tombol">
+                </td>
+            </tr>
+            <tr>
+                <td id="ps_fid">PS</td>
+                <td id="ps_fid1">:</td>
+                <td>
+                    <input type="text" id="text_file2" class="form-control-mod-dta">
+                </td>
+                <td>
+                    <input type="file" id="FileUpload2" class="tombol">
+                </td>
+            </tr>
+            <tr>
+                <td id="not">NOTULEN</td>
+                <td id="not1">:</td>
+                <td>
+                    <input type="text" id="text_file3" class="form-control-mod-dta">
+                </td>
+                <td>
+                    <input type="file" id="FileUpload3" class="tombol">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+
+<div id="upload_file" hidden>
+    <div class='judul-form'>FID Information</div>
+    <div style="padding:10px;">
+        <table class="tbl-form" width="100%">
+            <!--<tr>
+                <td id="fid_up">Draft FID</td>
+                <td id="fid_up1">:</td>
+                <td>
+                    <input type="text" id="text_fid" class="form-control-mod-dta">
+                </td>
+                <td>
+                    <input type="file" id="File_fid" class="tombol">
+                </td>
+            </tr>-->
+            <tr>
+                <td id="fid">FID</td>
+                <td width="2px" id="fid1">:</td>
+                <td>
+                    <input type="text" id="text_fid" class="form-control-mod-dta">
+                </td>
+                <td>
+                    <input type="file" id="File_fid" class="tombol">
+                </td>
+                <td>
+                    <input type="text" id="fid_file" class="form-control-mod-dta">
+                </td>
+                <td width="5px;">
+                    <button class="tombol" style="width:60px" id="view_fid"
+                            onclick="ViewFile($('#fid_file').val());"
+                            type="button">
+                        <i class="fa fa-eye" aria-hidden="true"></i><br />View
+                    </button>
+                </td>
+                <td width="5px;">
+                    <button class="tombol" style="width:60px" id="delete_fid"
+                            onclick="DeleteFile($('#fid_file').val());"
+                            type="button">
+                        <i class="fa fa-remove" aria-hidden="true"></i><br />Delete
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="catatan" hidden>
+
+    <table border="0px" width="100%" height="100%">
+        <tr>
+            <td width="60%" valign="top">
+                <div id="gridCatatan" style="height:415px;border-left:none;border-bottom:1px dotted #dedede;border-radius:0px;border-top:0px;" class="responsive"></div>
+            </td>
+            <td valign="top">
+                <div style="text-align:center;">
+                    <textarea id="note_process_view" style="width:90%;border:1px dashed #dedede ;height:180px;background:#fdfd96;margin-top:20px;border-radius:5px;" readonly placeholder="Pilih item catatan di samping untuk menampilkan !"></textarea>
+                    <br />
+                    <textarea id="note_process" style="width:90%;border:1px dashed #dedede ;height:180px;background:#fdfd96;margin-top:20px;border-radius:5px;" placeholder="Tinggalkan catatan di sini !"></textarea>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<style>
+    .w2ui-field input {
+        width: 400px;
+    }
+
+    .w2ui-field > div > span {
+        margin-left: 20px;
+    }
+</style>
+

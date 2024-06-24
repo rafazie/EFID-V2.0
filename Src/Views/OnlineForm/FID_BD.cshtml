@@ -1,0 +1,486 @@
+﻿@{
+    //Layout = null;
+    string UserId = User.Identity.Name.ToString();
+}
+
+@{
+    var year = DateTime.Now.ToString("yyyy");
+}
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    table {
+        width: 95%;
+        border-collapse: collapse;
+        margin: auto;
+    }
+
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    thead {
+        display: table-row-group; /* Ensure header repeats on each page */
+    }
+
+    tfoot {
+        display: table-footer-group; /* Ensure footer repeats on each page */
+    }
+
+    .page-break {
+        page-break-before: always;
+    }
+
+    tr {
+        height: 25px;
+    }
+
+    .td-none {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .biru {
+        background-color: #ccedff;
+    }
+
+    .ace-file-input .ace-file-container.selected + .remove {
+        display: none;
+    }
+
+    .preview-container {
+        margin-top: 20px;
+    }
+
+        .preview-container img {
+            max-width: 100%;
+            max-height: 500px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+    .remove-button {
+        display: none;
+        cursor: pointer;
+        color: red;
+    }
+
+    .col-md-1 {
+        width: 8.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-md-2 {
+        width: 16.666%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.333%;
+    }
+
+    .col-md-5 {
+        width: 41.67%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.333%;
+    }
+
+    .col-md-8 {
+        width: 66.67%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.333%;
+    }
+
+    .col-md-11 {
+        width: 91.67%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    ul, ol {
+        list-style-type: none;
+    }
+
+    li.row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+        li.row .col-md-1,
+        li.row .col-md-10 {
+            display: flex;
+            align-items: center;
+        }
+
+    .td-specimen {
+        height: 120px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .img-specimen {
+        max-height: 70%;
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .img-specimen-small {
+        max-height: 200%;
+        max-width: 30%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .new-table th, .new-table td {
+        border: none;
+    }
+
+    .news-tb table {
+        width: 100%;
+    }
+
+    tr td {
+        font-size: 12px;
+    }
+</style>
+
+<div id="doc-fid">
+    @*<button class="btn btn-primary" type="button" onclick="addSpecimentfid('man1')">Add Specimen</button>
+    <button class="btn btn-primary" type="button" onclick="addSpecimentfid('man2')">Add Specimen</button>
+    <button class="btn btn-primary" type="button" onclick="addSpecimentfid('man3')">Add Specimen</button>
+    <button class="btn btn-primary" type="button" onclick="addSpecimentfid('man4')">Add Specimen</button>
+    <button class="btn btn-primary" type="button" onclick="addSpecimentfid('man5')">Add Specimen</button>*@
+    <div>
+        <table id="tblFID">
+            <thead>
+                <tr>
+                    <td class="col-md-12" style="text-align:center; font-size:16px; border: none;" colspan="4">
+                        <span><b>FINAL INVESMENT DECISION</b></span><br />
+                        <span><b>RKAP TAHUN @year</b></span><br />
+                        <span><b>PT. PERTAMINA RETAIL</b></span>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="col-md-3" style="font-size:12px;">
+                        <b>Nama Project</b>
+                    </td>
+                    <td style="font-size:14px;" contenteditable="true" colspan="3">
+                        <b></b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3" style="font-size:12px;">
+                        <b>Lokasi</b>
+                    </td>
+                    <td style="font-size:14px;" contenteditable="true" colspan="3">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3" style="font-size:12px;">
+                        <b>Kategori</b>
+                    </td>
+                    <td style="font-size:14px;" contenteditable="true" colspan="3">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3" style="font-size:12px;">
+                        <b>Bidang</b>
+                    </td>
+                    <td style="font-size:14px;" contenteditable="true" colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 12px; background-color: #bfbfbf">
+                        <b>Parameter Keekonomian</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3" style="text-align:center;"></td>
+                    <td class="col-md-3" style="text-align:center;">
+                        <b>Usulan Keekonomian Awal</b>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;">
+                        <b>Hasil Eveluasi Keekonomian GR</b>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;">
+                        <b>Batasan Parameter</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <span><b>Nilai Investasi excld. Modular thn-0 (Rp)</b></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-size: 12px; background-color: #bfbfbf">
+                        <b>Indikator Keekonomian</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <span><b>NPV (Rp)</b></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <p><b>IRR (%)</b></p>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <p><b>Profitability Index</b></p>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-3">
+                        <p><b>Disc. Payback Period (Tahun)</b></p>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                    <td class="col-md-3" style="text-align:center;" contenteditable="true">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr style="page-break-inside: avoid !important;">
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="page-break-inside: avoid !important;">
+
+            <tr style="page-break-inside: avoid !important;">
+                <td colspan="2" style="background-color: #bfbfbf; text-align:center;">
+                    <b>Koordinator Investasi</b>
+                </td>
+                <td colspan="2" style="background-color: #bfbfbf; text-align: center;">
+                    <b>Gate Reviewers</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: #bfbfbf; text-align:center;">
+                    <b>Disiapkan Oleh,</b>
+                </td>
+                <td colspan="2" style="background-color: #bfbfbf; text-align: center;">
+                    <b>Diperiksa Oleh,</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="text-align: center; border: none; border-left: 1px solid; border-right: 1px solid;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+                <td class="col-md-6" id="speciment-fid" colspan="2" style="text-align: center; border: none; border-right: 1px solid; border-left: 1px solid; " contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="text-align:center; height:130px; border-top: none;">
+                    <table>
+                        <tr>
+                            <td id="ttd-fid-1" class="td-specimen" colspan="3" style="border:none; height: 120px;">@*TTD MAN BPD HERE*@</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="col-md-6" id="speciment-fid" colspan="2" style="text-align: center; height: 130px; border-top: none;">
+                    <table>
+                        <tr>
+                            <td id="ttd-fid-2" class="td-specimen" colspan="2" style="border:none;">@*TTD MAN CSPRM HERE*@</td>
+                        </tr>
+                        <tr>
+                            <td id="ttd-fid-3" class="col-md-6" style="height: 30px; border:none;">@*TTD MAN FBS HERE*@</td>
+
+                            <td id="ttd-fid-4" class="col-md-6" style="height: 30px; border:none;">@*TTD CORPLAN HERE*@</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="text-align:center;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+                <td class="col-md-6" colspan="2" style="text-align: center;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="background-color: #bfbfbf;">
+                    <span id="date-sgtr-1">Tanggal :</span>
+                </td>
+                <td class="col-md-6" colspan="2" style="background-color: #bfbfbf;">
+                    <span id="date-sgtr-2">Tanggal :</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="background-color: #bfbfbf; text-align:center;">
+                    <b> Decicion Gate</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: #bfbfbf; text-align:center;">
+                    <b>Mengetahui</b>
+                </td>
+                <td colspan="2" style="background-color: #bfbfbf; text-align: center;">
+                    <b>Menyetujui</b>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="text-align: center; border: none; border-left: 1px solid; border-right: 1px solid;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+                <td class="col-md-6" id="speciment-fid" colspan="2" style="text-align: center; border: none; border-right: 1px solid; border-left: 1px solid; " contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; height: 130px; border-top: none;">
+                </td>
+                <td colspan="2" style="text-align: center; height: 130px; border-top: none;">
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="text-align:center;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+                <td class="col-md-6" colspan="2" style="text-align: center;" contenteditable="true">
+                    <section class="text-for-signature"><b>Input Text Here</b></section>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-6" colspan="2" style="background-color: #bfbfbf;">
+                    <span id="date-sgtr-3">Tanggal :</span>
+                </td>
+                <td class="col-md-6" colspan="2" style="background-color: #bfbfbf;">
+                    <span id="date-sgtr-4">Tanggal :</span>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+
+<script>
+
+    function addSpecimentfid(flag) {
+        debugger
+        var speciment = $.ajax({
+            /* url: URL_PTPR + '/FID/SaveFID',*/
+            url: URL_PTPR + '/OnlineForm/AddSignature',
+            type: 'GET',
+            dataType: "json",
+            cache: false,
+            async: false,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+
+                if (data != '') {
+
+                    var dataimg = data.img64string;
+
+                    if (flag == 'man1') {
+                        var img = $('<img class="img-specimen">').attr('src', 'data:image/jpeg;base64,' + data.img64string);
+                        $('#ttd-fid-1').html(img);
+                    };
+                    if (flag == 'man2') {
+                        var img = $('<img class="img-specimen-small">').attr('src', 'data:image/jpeg;base64,' + data.img64string);
+                        $('#ttd-fid-2').html(img);
+                    };
+                    if (flag == 'man3') {
+                        var img = $('<img class="img-specimen-small">').attr('src', 'data:image/jpeg;base64,' + data.img64string);
+                        $('#ttd-fid-3').html(img);
+                    };
+                    if (flag == 'man4') {
+                        var img = $('<img class="img-specimen-small">').attr('src', 'data:image/jpeg;base64,' + data.img64string);
+                        $('#ttd-fid-4').html(img);
+                    };
+                    if (flag == 'man5') {
+                        var img = $('<img class="img-specimen">').attr('src', 'data:image/jpeg;base64,' + data.img64string);
+                        $('#ttd-fid-5').html(img);
+                    };
+                };
+
+            }
+        });
+    }
+
+</script>
+

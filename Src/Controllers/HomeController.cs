@@ -1,32 +1,30 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using EFID_V2.Models;
-using System.Diagnostics;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
 
-namespace Src.Controllers
+namespace SimplifikasiFID.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public ActionResult Index()
         {
-            _logger = logger;
-        }
-
-        public IActionResult Index()
-        {
-            var userIdentity = HttpContext.User.Identity;
-            if (userIdentity.IsAuthenticated)
+            if (Request.IsAuthenticated)
             {
-                return View(userIdentity);
+                return View();
             }
             else
             {
-                return RedirectToAction("Logout", "User");
+                return View("Login");
             }
         }
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        
     }
 }

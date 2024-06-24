@@ -255,13 +255,13 @@
 <div class="row" id="box_info_req_update">
 
     <div class="col-sm-4 box-mascot" style="padding-top:5%;">
-        <img src="lib/images/logo_ptm.png" class="logo_welcome" style="width:40%;">
+        <img src="../../../Content/Images/logo_ptm.png" class="logo_welcome" style="width:40%;">
     </div>
     <div class="col-sm-8">
         <div style="text-align:left;font-size:12px;padding-top:5%;">
             <span style="font-size:20px;">
-                Hi,..  <br />
-                Selamat datang di <span style="font-weight:bold;color:cornflowerblue;font-size:30px;">E-FID V2.0 </span> <br />Pertamina Retail
+                Hi,.. @User.Identity.Name.ToString() <br />
+                Selamat datang di <span style="font-weight:bold;color:cornflowerblue;font-size:30px;">E-FID </span> <br />Pertamina Retail
             </span><br /><br /><br />
             Terima kasih telah menggunakan Sistem Ini<br />
             Gunakan fitur-fitur yang telah kami sediakan dibawah ini<br />Semoga pengalaman Anda dalam menggunakan ini menjadi lebih menyenangkan. <br />
@@ -275,22 +275,36 @@
 <hr />
 
 <div id="box_info_req_update_icon">
+    @*<div class="icon_short_cut" onclick="open_shortcut('/FID/vFID')">
 
-    <div class="icon_short_cut">
-        <a href="~/FID/PengajuanInvestasi?category=bd">
             <i class="fa fa-file" aria-hidden="true" style="color:#6eaad5;"></i>
             <br />
             <br />
-            <span class="lbl bigger-100"><b>Usulan Investasi BD</b></span>
-        </a>
+            <span class="lbl bigger-100">F I D</span>
+
+        </div>*@
+    @*<div class="icon_short_cut" onclick="open_shortcut('OnlineForm/SampleForm')">
+        <i class="fa fa-plus-square" aria-hidden="true" style="color:#fdcd45;"></i><br><br>
+        <br />
+        <br />
+        <span class="lbl bigger-100">Sample Form</span>
+    </div>*@
+
+    <div class="icon_short_cut" onclick="open_shortcut('FID/vFID?category=bd')">
+
+        <i class="fa fa-file" aria-hidden="true" style="color:#6eaad5;"></i>
+        <br />
+        <br />
+        <span class="lbl bigger-100"><b>Usulan Investasi BD</b></span>
+
     </div>
-    <div class="icon_short_cut">
-        <a href="~/FID/PengajuanInvestasi?category=nonbd">
-            <i class="fa fa-file" aria-hidden="true" style="color:#6eaad5;"></i>
-            <br />
-            <br />
-            <span class="lbl bigger-100"><b>Usulan Investasi NON BD</b></span>
-        </a>
+    <div class="icon_short_cut" onclick="open_shortcut('FID/vFID?category=nonbd')">
+
+        <i class="fa fa-file" aria-hidden="true" style="color:#6eaad5;"></i>
+        <br />
+        <br />
+        <span class="lbl bigger-100"><b>Usulan Investasi NON BD</b></span>
+
     </div>
 
 </div>

@@ -1,0 +1,1319 @@
+﻿@using SimplifikasiFID.Models;
+@model EditFormDTO
+@{
+    ViewBag.Title = "Approve Form";
+    ViewBag.ActiveMenu = "Approve Form";
+    ViewBag.ActiveMenuCaption = "Usulan Investasi " + Model.T_FID.Jenisfid;
+    ViewBag.Icon = "<i class=\"ace-icon fa fa-folder\"></i>";
+    ViewBag.SideMenu = "Yes";
+}
+
+@{
+    SimplyFIDEntities dbs = new SimplyFIDEntities();
+    var fungsi = dbs.M_Fungsi.Where(x => x.FungsiID == Model.T_FID.Fungsipengusul).FirstOrDefault();
+    var listFungsi = dbs.M_Fungsi.ToList();
+    var category = Model.T_FID.Jenisfid;
+    var status = Model.T_FID.Status;
+}
+<style>
+    .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+
+    tr {
+        height: 40px;
+    }
+
+    .td-none {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .biru {
+        background-color: #ccedff;
+    }
+
+    .ace-file-input .ace-file-container.selected + .remove {
+        display: none;
+    }
+
+    .preview-container {
+        margin-top: 20px;
+    }
+
+        .preview-container img {
+            max-width: 100%;
+            max-height: 500px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+    .remove-button {
+        display: none;
+        cursor: pointer;
+        color: red;
+    }
+
+    @@media (min-width: 992px) {
+        .col-md-2 {
+            width: 16.666%;
+        }
+
+        .col-sm-3 {
+            width: 25%;
+        }
+
+        .col-md-4 {
+            width: 33.333%;
+        }
+
+        .col-sm-6 {
+            width: 50%;
+        }
+
+        .col-sm-7 {
+            width: 58.333%;
+        }
+
+        .col-md-9 {
+            width: 75%;
+        }
+
+        .col-sm-10 {
+            width: 83.333%;
+        }
+
+        .col-md-12 {
+            width: 100%;
+        }
+    }
+
+    li ::marker {
+        content: "";
+    }
+
+    li.row {
+        display: flex;
+    }
+
+    .col-sm-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li.row {
+        display: flex;
+    }
+
+    .ctrFile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-table th, .new-table td {
+        border: none;
+    }
+
+    .news-tb table {
+        width: 100%;
+    }
+</style>
+
+<div>
+    <div style="margin-top:20px; margin-bottom:20px;">
+        <ul class="nav nav-tabs" id="tabs">
+            <li id="tab1" class="active">
+                <a data-toggle="tab" href="#tabInfo" aria-expanded="true" style="border-left:none;">
+                    <i class="fa fa-desktop"></i> Information
+                </a>
+            </li>
+            <li id="tab2">
+                <a data-toggle="tab" href="#docPS" aria-expanded="true" style="border-left:none;">
+                    <i class="fa fa-file"></i> Doc. PS
+                </a>
+            </li>
+            @{
+                if (category != "BD")
+                {
+                    <li id="tab3">
+                        <a data-toggle="tab" href="#docCBA" aria-expanded="true" style="border-left:none;">
+                            <i class="fa fa-file"></i> Doc. CBA
+                        </a>
+                    </li>
+                }
+            }
+            <li id="tab4">
+                <a data-toggle="tab" href="#list-docs" aria-expanded="true" style="border-left:none;">
+                    <i class="fa fa-list"></i> List Doc.
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content" style="min-height:300px;border-bottom:none;border-left:none;border-right:none;padding:0px;">
+
+            <div id="tabInfo" role="dialog" class="tab-pane fade in active">
+                <form class="form-horizontal">
+                    <div class="mb-2">
+                        <h4 style="margin-left:10px;">
+                            <i class="fa fa-desktop"></i>
+                            Information
+                        </h4>
+                    </div>
+                    <div class="box-body">
+                        <br>
+                        <div class="form-group" id="idFID">
+                            <label for="inputName" class="col-sm-2 control-label">Nomor FID :</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="noFID" readonly style="background-color:whitesmoke;" value="@Model.T_FID.NoFID">
+                            </div>
+                        </div>
+
+                        <div id="idJudul" class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Tahun Anggaran :</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" id="thn_usul" placeholder="Tahun Anggaran" type="text" readonly value="@Model.T_FID.TahunAnggaran" />
+                                <script>
+                                    $(document).ready(function () {
+                                        $("#thn_usul").datepicker({
+                                            format: "yyyy",
+                                            viewMode: "years",
+                                            minViewMode: "years",
+                                            autoclose: true
+                                        });
+                                    })
+                                </script>
+                            </div>
+                        </div>
+
+                        <div id="idJudul" class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Judul Usulan :</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="judul_usul" placeholder="Judul Usulan" type="text" value="@Model.T_FID.Judulfid">
+                            </div>
+                        </div>
+
+                        <div id="idABI" class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Nilai Pengajuan ABI :</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="nilai_abi" placeholder="Nilai ABI Dalam Angka" type="text" onkeypress="return onlyNumberKey(event)" oninput="setCurrency('nilai_abi')" value="@Model.T_FID.NilaiABI">
+                                <script>
+                                    function setCurrency(id) {
+                                        if (document.getElementById(id).value != "") {
+                                            document.getElementById(id).value = parseFloat(document.getElementById(id).value.replace(/\,/g, ""))
+                                                .toString()
+                                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Fungsi Pengusul :</label>
+                            <div class="col-sm-4">
+                                <select class="form-control select2" id="fungsi_usul">
+                                    @{
+                                        if (fungsi != null)
+                                        {
+                                            <option value="@fungsi.FungsiID" selected>@fungsi.FungsiName</option>
+                                        }
+                                    }
+                                    <option value="">-- Select Fungsi Pengusul --</option>
+                                    @foreach (var list in listFungsi)
+                                    {
+                                        <option value="@list.FungsiID">@list.FungsiName</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">Jenis Usulan :</label>
+                            <div class="col-sm-2">
+                                <input class="form-control" id="jenis_usul" placeholder="Judul Usulan" type="text" value="@Model.T_FID.Jenisfid" readonly>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:20px;">
+                        <h4 style="margin-left:10px;">
+                            <i class="fa fa-at"></i>
+                            Email
+                        </h4>
+                        <div class="bx d-block body">
+                            <div class="form-group" id="cls_email">
+                                <label for="inputName" class="col-sm-2 control-label">Name :</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="name_txt" placeholder="@Model.T_FID.CreatedBy" type="text" readonly style="background-color:whitesmoke;" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div id="idEmail" class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Email :</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="email_txt" placeholder="email@email.com" value="" type="text" readonly>
+                                </div>
+                            </div>
+
+                            <div id="idJabatan" class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Jabatan :</label>
+                                <div class="col-sm-8">
+                                    <input class="form-control" id="jabatan_txt" placeholder="User" type="text" readonly style="background-color:whitesmoke;" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="docPS" role="dialog" class="tab-pane fade" style="padding:0px;padding-top:10px">
+                <form class="row" id="frmPS">
+                    @{
+                        var formPS = Model.M_UploadFiles.Where(x => x.NoFID == Model.T_FID.NoFID && x.Category == "PS").OrderByDescending(x => x.UploadDate).FirstOrDefault();
+                        @Html.Raw(formPS.HtmlTag);
+                    }
+                </form>
+            </div>
+
+            @{
+                if (category != "BD")
+
+                {
+                    <div id="docCBA" role="dialog" class="tab-pane fade" style="padding:0px;padding-top:10px">
+                        <form class="row" id="frmCBA">
+                            @{
+                                var formCBA = Model.M_UploadFiles.Where(x => x.NoFID == Model.T_FID.NoFID && x.Category == "CBA").OrderByDescending(x => x.UploadDate).FirstOrDefault();
+                                @Html.Raw(formCBA.HtmlTag);
+                            }
+                        </form>
+                    </div>
+                }
+            }
+
+            <div id="list-docs" class="tab-pane fade" style="padding:0px;padding-top:0px;">
+                <table class="new-table" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tr>
+                        <td width="50%" valign="top" style="padding-top:1px;">
+                            <div id="grid-docs" style="height:500px;border:none;border-radius:0px;border-top:1px solid #dedede;border-right:0px solid #dedede;">></div>
+                        </td>
+                        <td valign="middle">
+                            <div id="preview_file" style="text-align:center;">
+                                <iframe src="" scrolling="no" id="frame_preview" frameborder="0" style="width:100%;height:500px;border:1px;"></iframe>
+                            </div>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:20px; margin-bottom:20px; margin-right:20px; float:right;">
+        <button id="ok" class="btn btn-success" onclick="saveUsulan()">Save</button>
+        <button id="cancel" class="btn btn-danger" onclick="returnHomeApprove()">Cancel</button>
+    </div>
+</div>
+
+<script>
+    setDisabled();
+    //showButtonApprove();
+    getListDocumentsApprove();
+    showSignatureApprove();
+    checkStatus();
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+        var target = $(e.target).attr("href");
+
+        if ((target == '#list-docs')) {
+            w2ui['grid-docs'].refresh();
+        }
+
+    });
+
+    function setDisabled() {
+        /*for Tab Information*/
+        const tabInfo = document.getElementById('tabInfo');
+        const textboxes = tabInfo.querySelectorAll('input[type="text"]');
+        const select = tabInfo.querySelector('select');
+        textboxes.forEach(textbox => {
+            textbox.disabled = true;
+        });
+
+        if (select) {
+            select.disabled = true;
+        }
+
+        /* for tab Document PS */
+        const tabPS = document.getElementById('docPS');
+        const tdPS = tabPS.querySelectorAll('td[contenteditable="true"]');
+        tdPS.forEach(td => {
+            td.contentEditable = false;
+        });
+
+        let categorys = '@category';
+        if (categorys != 'BD') {
+            /* for tab Document CBA */
+            const tabCBA = document.getElementById('docCBA');
+            const tdCBA = tabCBA.querySelectorAll('td[contenteditable="true"]');
+            tdCBA.forEach(td => {
+                td.contentEditable = false;
+            });
+        }
+    }
+
+    function getListDocumentsApprove() {
+        var ID = '@Model.T_FID.NoFID';
+
+        if (w2ui['grid-docs'] != null) {
+
+            w2ui['grid-docs'].destroy();
+
+        }
+
+        $('#grid-docs').w2grid({
+            name: 'grid-docs',
+            show: {
+                footer: true,
+                toolbar: true,
+                lineNumbers: true,
+                toolbarAdd: true,
+                toolbarDelete: true,
+                toolbarInput: false,
+                toolbarReload: true,
+                toolbarColumns: false,
+            },
+            columns: [
+                { field: 'DocType', caption: 'Tipe Dokumen', size: '150px', searchable: 'text' },
+                { field: 'FileName', caption: 'File Name', size: '150px', searchable: 'text' },
+                {
+                    field: 'FileName', caption: '', size: '150px',
+                    render: function (record) {
+
+                        var download
+
+                        download = '<a href="' + URL_PTPR + '/FID/GetDocumentFiles?id=' + record.recid + '" target="_blank"><i class="fa fa-cloud-download" aria-hidden="true" ></i> View Full Page</a>';
+
+                        return download;
+
+                    }
+                },
+                { field: 'UploadDate', caption: 'Upload Date', size: '150px', searchable: 'text' },
+            ],
+            onAdd: function (event) {
+                form_upload_file();
+            },
+            onReload: function (event) {
+                refresh_gridDocs(ID);
+            },
+            onSelect: function (event) {
+
+
+                if (event.recid != undefined) {
+
+                    var record = this.get(event.recid);
+
+                    var file_url = URL_PTPR + '/FID/GetDocumentFiles?id=' + record.recid;
+
+                    $("#frame_preview").attr("src", file_url);
+
+                }
+
+            },
+            onUnselect: function (event) {
+                $("#frame_preview").attr("src", "");
+            },
+            onDelete: function (event) {
+
+                var sel = this.getSelection();
+                if (event.force == true) {
+
+                    render_wait();
+
+                    sel.forEach(function (entry) {
+
+                        var record = w2ui.gridUpload.get(entry);
+
+                        var Delete = $.ajax({
+                            url: URL_PTR + '/FID/DeleteFiles?id=' + record.recid,
+                            type: 'POST',
+                            dataType: "json",
+                            cache: false,
+                            async: false,
+                            contentType: false,
+                            processData: false,
+                        });
+
+
+                    });
+
+
+                    clear_wait();
+                    $('#modal_upload').modal("hide");
+
+                    w2alert("Delete File Success. ")
+                }
+
+            },
+
+        });
+
+
+        refresh_gridDocs(ID);
+    }
+
+    function refresh_gridDocs(ID) {
+        w2ui['grid-docs'].load(URL_PTR + '/FID/GetDocument?NoFID=' + ID);
+    }
+
+    $('#file-other').ace_file_input();
+
+
+
+    function generateJSON2() {
+        let datahtml = document.getElementById("frmDocs").innerHTML;
+
+        alert(datahtml);
+    }
+
+    function removeFiles() {
+        $('#file-other').ace_file_input('reset_input');
+        $('.remove-button2').css('display', 'none');
+    }
+
+    function saveUsulan() {
+
+        w2confirm('Apakah Anda Yakin Akan Menyimpan Usulan ini? <br>' +
+            'Periksa Kembali Dokumen PS (Project Summary) <br>' +
+            'Periksa Kembali Dokumen CBA (Cost Benefit Analisys)')
+            .yes(() => { render_wait(); saveEditUsulan() })
+            .no(() => { return })
+
+    }
+
+    function saveEditUsulan() {
+        let categorys = '@category';
+        var flag = set_flag();
+
+        if (checkSignApprove(flag, categorys)) return;
+
+        RemoveButtonApprove();
+
+        var Nominal = $("#nilai_abi").val();
+        Nominal = Nominal.replace(/,/g, '');
+
+        let dataPS = document.getElementById("frmPS").innerHTML;
+
+        let dataCBA = '';
+        if (categorys != "BD") {
+            dataCBA = document.getElementById("frmCBA").innerHTML;
+        }
+
+        var dataUsulan = new FormData();
+        dataUsulan.append('NoFID', $('#noFID').val());
+        dataUsulan.append('JudulFID', $('#judul_usul').val());
+        dataUsulan.append('ThnAng', $('#thn_usul').val());
+        dataUsulan.append('NilaiABI', Nominal);
+        dataUsulan.append('FungsiPengusul', $('#fungsi_usul').val());
+        dataUsulan.append('JenisFID', $('#jenis_usul').val());
+        dataUsulan.append('UserName', '@User.Identity.Name.ToString()');
+        dataUsulan.append('Email', $('#email_txt').val());
+        dataUsulan.append('Jabatan', 'User');
+        dataUsulan.append('Flag_update', flag);
+        dataUsulan.append('filePS', dataPS);
+        if (categorys != "BD") {
+            dataUsulan.append('fileCBA', dataCBA);
+        }
+
+        //var fileOTH = $("#file-other").get(0);
+        //var filesOTH = fileOTH.files;
+        //for (var i = 0; i < filesOTH.length; i++) {
+        //    dataUsulan.append(filesOTH[i].name, filesOTH[i]);
+        //}
+
+        render_wait();
+
+        var Simpan = $.ajax({
+           /* url: URL_PTPR + '/FID/SaveFID',*/
+            url: URL_PTPR + '/OnlineForm/SaveFID',
+            type: 'POST',
+            data: dataUsulan,
+            dataType: "json",
+            cache: false,
+            async: false,
+            contentType: false,
+            processData: false,
+        });
+
+        if (Simpan.responseJSON["Result"] != "Error") {
+            w2alert('Simpan Usulan success !');
+            formDefaultEdit();
+            clear_wait();
+
+            returnHomeApprove();
+        }
+        else {
+
+            alert('Add new FID failed, please try again !  ' + Simpan.responseJSON["Msg"]);
+
+            clear_wait();
+        }
+    }
+
+    function set_flag() {
+        let status = '@status';
+        let categorys = '@category';
+        debugger
+        if (categorys == 'BD') {
+            if (status == 1) {
+                var imgElement = document.getElementById("img-bd-ttd-ps1");
+                var imgElement2 = document.getElementById("img-bd-prf-ps1");
+
+                if (imgElement.src != "" && imgElement2.src == "") {
+                    return 'SIG2'
+                }
+                else {
+                    return 'SIG1'
+                }
+            }
+            else if (status == 21) {
+                return 'SIG2'
+            }
+            else if (status == 22) {
+                var imgElement = document.getElementById("img-bd-ttd-ps1");
+                var imgElement2 = document.getElementById("img-bd-ttd-ps2");
+                var imgElement3 = document.getElementById("img-bd-prf-ps2");
+
+                if (imgElement.src != "" && imgElement2.src != "" && imgElement3.src == "") {
+                    return 'SIG4'
+                }
+                else if (imgElement.src != "" && imgElement2.src == "" && imgElement3.src != "") {
+                    return 'SIG3'
+                }
+                else {
+                    return 'SIG3'
+                }
+            }
+            else if (status == 23) {
+                return 'SIG4'
+            }
+        }
+        else {
+            if (status == 1) {
+                var imgpsttd1 = document.getElementById("img-nbd-ttd-ps1");
+                var imgpsprf1 = document.getElementById("img-nbd-prf-ps1");
+                var imgcbattd1 = document.getElementById("img-cba-ttd1");
+                var imgcbaprf1 = document.getElementById("img-prf-cba-1");
+                
+                if (imgpsttd1.src != "" && imgcbattd1.src != "" && imgpsprf1.src == "" && imgcbaprf1.src == "") {
+                    return 'SIG2'
+                }
+                else {
+                    return 'SIG1'
+                }
+            }
+            else if (status == 21) {
+                return 'SIG2'
+            }
+            else if (status == 22) {
+                var imgpsttd1 = document.getElementById("img-nbd-ttd-ps1");
+                var imgpsttd2 = document.getElementById("img-nbd-ttd-ps2");
+                var imgpsprf2 = document.getElementById("img-nbd-prf-ps2");
+
+                var imgcbattd1 = document.getElementById("img-cba-ttd1");
+                var imgcbattd2 = document.getElementById("img-cba-ttd2");
+                var imgcbaprf2 = document.getElementById("img-prf-cba-2");
+
+                if (imgpsttd1.src != "" && imgpsttd2.src != "" && imgcbattd1.src != "" && imgcbattd2.src != "" && imgpsprf2.src == "" && imgcbaprf2.src == "") {
+                    return 'SIG4'
+                }
+                else if (imgpsttd1.src != "" && imgpsprf2.src != "" && imgcbattd1.src != "" && imgpsttd2.src == "" && imgcbaprf1.src == "" && imgcbaprf2.src != "") {
+                    return 'SIG3'
+                }
+                else {
+                    return 'SIG3'
+                }
+            }
+            else if (status == 23) {
+                return 'SIG4'
+            }
+        }
+    }
+
+    function addDynamicForm(data, idValue) {
+
+        let htmltag = addhtmlform(idValue.value);
+
+        $('#' + data).append(htmltag);
+
+        idValue.value += 1;
+    };
+
+    function removeDynamicForm(val, btnId, page) {
+
+        $('#' + val).off('click', '#' + btnId).on('click', '#' + btnId, function () {
+            $('#' + page + ' > .container:last').remove();
+            if ($("#" + btnId).length == 0) $("#" + page).addClass('hide');
+        });
+    };
+
+    function addhtmlform(idform) {
+
+        var strhtml = `
+                            <div class="container dynfrm" style="margin-bottom:10px;">
+                                <table>
+                                    <tr style="height:40px;">
+                                        <td style="font-size:12px; width:30px; border:none;">
+                                            ` + idform + `
+                                        </td>
+                                        <td style="font-size:14px; border-color:#eadddd;" colspan="2" contenteditable="true">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+                    `;
+        return strhtml;
+    }
+
+    function addImages(filename, imgFrame, btnRemove) {
+
+        var cek = document.getElementById(filename).files.length;
+
+        $('#' + filename).on('change', function () {
+
+            var file = this.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $('#' + imgFrame).attr('src', event.target.result);
+                    /*$('.remove-button').css('display', 'inline');*/
+                    $('#' + btnRemove).css('display', 'inline');
+
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+    }
+
+    function removeImages(btnDel, imgFrame, filename) {
+
+        $('#' + imgFrame).removeAttr('src');
+        $('#' + filename).ace_file_input('reset_input');
+        $('#' + btnDel).css('display', 'none');
+
+    }
+
+    function RemoveButtonApprove() {
+        var table = document.getElementById('tblPS');
+        var sections = table.querySelectorAll('section');
+        var buttons = table.getElementsByTagName('button');
+        var fileInputs = table.querySelectorAll('input[type="file"]');
+        var containers = table.querySelectorAll('.dynfrm td');
+
+        buttons = Array.prototype.slice.call(buttons);
+        buttons.forEach(function (button) {
+            /*button.parentNode.removeChild(button);*/
+            button.style.display = 'none';
+        });
+
+        fileInputs.forEach(function (fileInput) {
+            /*fileInput.parentNode.removeChild(fileInput);*/
+            fileInput.style.display = 'none';
+        });
+
+        sections.forEach(function (section) {
+            /* section.parentNode.removeChild(section);*/
+            section.style.display = 'none';
+        });
+
+        containers.forEach(function (td) {
+            td.style.borderColor = 'transparent';
+        });
+
+
+        var table2 = document.getElementById('tbl-ps-sgtr');
+        var sections2 = table2.querySelectorAll('section');
+        var buttons2 = table2.getElementsByTagName('button');
+        var fileInputs2 = table2.querySelectorAll('input[type="file"]');
+        var containers2 = table2.querySelectorAll('.dynfrm td');
+        var row = document.getElementById("prf-place");
+
+        buttons2 = Array.prototype.slice.call(buttons2);
+        buttons2.forEach(function (button) {
+            /*button.parentNode.removeChild(button);*/
+            button.style.display = 'none';
+        });
+
+        fileInputs2.forEach(function (fileInputs2) {
+            /*fileInput.parentNode.removeChild(fileInput);*/
+            fileInputs2.style.display = 'none';
+        });
+
+        sections2.forEach(function (sections2) {
+            /* section.parentNode.removeChild(section);*/
+            sections2.style.display = 'none';
+        });
+
+        containers2.forEach(function (td) {
+            td.style.borderColor = 'transparent';
+        });
+
+        if (row) {
+            row.style.display = "none";
+        }
+
+
+        var table3 = document.getElementById('tbl-cba-sgtr');
+        if (table3) {
+            var sections3 = table3.querySelectorAll('section');
+            var buttons3 = table3.getElementsByTagName('button');
+            var fileInputs3 = table3.querySelectorAll('input[type="file"]');
+            var containers3 = table3.querySelectorAll('.dynfrm td');
+            var row2 = document.getElementById("prf-place-cba");
+
+            buttons3 = Array.prototype.slice.call(buttons2);
+            buttons3.forEach(function (button) {
+                /*button.parentNode.removeChild(button);*/
+                button.style.display = 'none';
+            });
+
+            fileInputs3.forEach(function (fileInputs3) {
+                /*fileInput.parentNode.removeChild(fileInput);*/
+                fileInputs3.style.display = 'none';
+            });
+
+            sections3.forEach(function (sections3) {
+                /* section.parentNode.removeChild(section);*/
+                sections3.style.display = 'none';
+            });
+
+            containers3.forEach(function (td) {
+                td.style.borderColor = 'transparent';
+            });
+
+            if (row2) {
+                row2.style.display = "none";
+            }
+        }
+
+    }
+
+    function showButtonApprove() {
+        var table = document.getElementById('tblPS');
+        var sections = table.querySelectorAll('section');
+        var buttons = table.getElementsByTagName('button');
+        var fileInputs = table.querySelectorAll('input[type="file"]');
+        var containers = table.querySelectorAll('.dynfrm td');
+
+        buttons = Array.prototype.slice.call(buttons);
+        buttons.forEach(function (button) {
+            button.style.display = 'block';
+        });
+
+        fileInputs.forEach(function (fileInput) {
+            fileInput.style.display = 'block';
+        });
+
+        sections.forEach(function (section) {
+            section.style.display = 'block';
+        });
+
+        containers.forEach(function (td) {
+            td.style.borderColor = '#eadddd';
+        });
+
+        var table2 = document.getElementById('tbl-ps-sgtr');
+        var sections2 = table2.querySelectorAll('section');
+        var buttons2 = table2.getElementsByTagName('button');
+        var fileInputs2 = table2.querySelectorAll('input[type="file"]');
+        var containers2 = table2.querySelectorAll('.dynfrm td');
+        var row = document.getElementById("prf-place");
+
+        buttons2 = Array.prototype.slice.call(buttons2);
+        buttons2.forEach(function (button) {
+            /*button.parentNode.removeChild(button);*/
+            button.style.display = 'block';
+        });
+
+        fileInputs2.forEach(function (fileInputs2) {
+            /*fileInput.parentNode.removeChild(fileInput);*/
+            fileInputs2.style.display = 'block';
+        });
+
+        sections2.forEach(function (sections2) {
+            /* section.parentNode.removeChild(section);*/
+            sections2.style.display = 'block';
+        });
+
+        containers2.forEach(function (td) {
+            td.style.borderColor = 'transparent';
+        });
+
+        if (row) {
+            row.style.display = "none";
+        }
+    }
+
+    function formDefaultEdit() {
+        $('#thn_usul').val("");
+        $('#judul_usul').val("");
+        $('#nilai_abi').val("");
+        $('#fungsi_usul').val("").trigger('change');
+
+        $('#others_file').ace_file_input('reset_input');
+
+        $('#tabs a[href="#info"]').tab('show');
+    }
+
+    function checkText(chkid, msg, tabs) {
+
+        if ($('#' + chkid).val() == "") {
+            alrt = '<p>' + msg + '</p>';
+
+            $('#alert_msg').html(alrt);
+            $('#modal_alert').modal("show");
+
+
+            $('#tabs a[href="#"' + tabs + ']').tab('show');
+
+            return true;
+        }
+
+        return false;
+    }
+
+    function checkTDEdit(tdid, msg, tabs) {
+
+        var td = document.getElementById(tdid);
+
+        // Checking if the td element is empty
+        var innert = td.innerHTML.trim();
+        var string = "<p>Input Text Here</p>";
+
+        if (innert == string) {
+            alrt = '<p>' + msg + '</p>';
+
+            $('#alert_msg').html(alrt);
+            $('#modal_alert').modal("show");
+
+            $('#tabs a[href="#"' + tabs + ']').tab('show');
+
+            return true;
+        }
+
+        return false;
+    }
+
+    function showSignatureApprove() {
+
+        // Get all div elements inside the tbody
+        var divs = document.querySelectorAll("#tbody-signature div");
+        var trs = document.querySelectorAll("#tbody-signature tr");
+
+        // Loop through all div elements and remove the hidden attribute
+        divs.forEach(function (div) {
+            div.removeAttribute("hidden");
+        });
+
+        trs.forEach(function (tr) {
+            tr.removeAttribute("hidden");
+        });
+
+    }
+
+    function checkStatus() {
+      
+        let status = '@status';
+        let categorys = '@category';
+        var ttd1 = document.querySelectorAll('.ttd-1');
+        var ttd2 = document.querySelectorAll('.ttd-2');
+        var prf1 = document.querySelectorAll('.prf-1');
+        var prf2 = document.querySelectorAll('.prf-2');
+
+        if (categorys == 'BD') {
+            if (status == 1) {
+                setHidden(ttd2);
+                setHidden(prf2);
+            }
+            else if (status == 21) {
+                var imgElement = document.getElementById("img-bd-ttd-ps1");
+
+                if (imgElement.src != "") {
+                    var trprf = document.getElementById('prf-place');
+                    if (trprf) {
+                        trprf.style.display = '';
+                    }
+
+                    //setHidden(ttd1);
+                    setHidden(prf1);
+                    showElement(ttd2);
+                    showElement(prf2);
+                }
+                else {
+                    showElement(ttd1);
+                    setHidden(ttd2);
+                    setHidden(prf1);
+                    setHidden(prf2);
+                }
+            }
+            else if (status == 22) {
+                var trprf = document.getElementById('prf-place');
+                if (trprf) {
+                    trprf.style.display = '';
+                }
+                showElement(ttd2);
+                showElement(prf2);
+            }
+            else if (status == 23) {
+                showElement(ttd1);
+                ttd1.forEach(element => {
+                    if (element) {
+                        var sectionToHide = element.querySelector('section.ctrFile');
+                        if (sectionToHide) {
+                            sectionToHide.style.display = 'none';
+                        }
+                    }
+                });
+                showElement(ttd2);
+                setHidden(prf1);
+                setHidden(prf2);
+            }
+        }
+        else {
+            if (status == 1) {
+                setHidden(ttd2);
+                setHidden(prf2);
+            }
+            else if (status == 21) {
+                var imgElement = document.getElementById("img-nbd-ttd-ps1");
+
+                if (imgElement.src != "") {
+                    var trprf = document.getElementById('prf-place');
+                    if (trprf) {
+                        trprf.style.display = '';
+                    }
+
+                    //setHidden(ttd1);
+                    setHidden(prf1);
+                    showElement(ttd2);
+                    showElement(prf2);
+                }
+                else {
+                    showElement(ttd1);
+                    setHidden(ttd2);
+                    setHidden(prf1);
+                    setHidden(prf2);
+                }
+            }
+            else if (status == 22) {
+                var trprf = document.getElementById('prf-place');
+                var trprf2 = document.getElementById('prf-place-cba');
+                if (trprf) {
+                    trprf.style.display = '';
+                }
+                if (trprf2) {
+                    trprf2.style.display = '';
+                }
+                showElement(ttd2);
+                showElement(prf2);
+            }
+            else if (status == 23) {
+                showElement(ttd1);
+                showElement(ttd2);
+                ttd1.forEach(element => {
+                    if (element) {
+                        var sectionToHide = element.querySelector('section.ctrFile');
+                        if (sectionToHide) {
+                            sectionToHide.style.display = 'none';
+                        }
+                    }
+                });
+     
+                setHidden(prf1);
+                setHidden(prf2);
+            }
+        }
+        
+    }
+
+    function setHidden(elements) {
+        elements.forEach(element => {
+            if (element) {
+                element.setAttribute("hidden", "true");
+            }
+        });
+    }
+
+    function showElement(elements) {
+        elements.forEach(element => {
+            if (element) {
+                element.removeAttribute("hidden");
+                var children = element.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].style.display = ''; // Remove the inline display style
+                }
+            }
+        });
+    }
+    function checkStatus2() {
+
+        let status = '@status';
+        var ttd1 = document.getElementById('ttd-1');
+        var ttd2 = document.getElementById('ttd-2');
+        var prf1 = document.getElementById('prf-1');
+        var prf2 = document.getElementById('prf-2');
+        if (status == 1) {
+            if (ttd1) {
+                ttd1.setAttribute("hidden", "true");
+            }
+            if (ttd2) {
+                ttd2.setAttribute("hidden", "true");
+            }
+            //if (prf1) {
+            //    div.setAttribute("hidden", "true");
+            //}
+            if (prf2) {
+                prf2.setAttribute("hidden", "true");
+            }
+        }
+        else if (status == 21) {
+            if (ttd1) {
+                ttd1.removeAttribute("hidden");
+                var children = ttd1.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].style.display = ''; // Remove the inline display style
+                }
+            }
+            if (ttd2) {
+                ttd2.setAttribute("hidden", "true");
+            }
+            if (prf1) {
+                div.setAttribute("hidden", "true");
+            }
+            if (prf2) {
+                prf2.setAttribute("hidden", "true");
+            }
+        }
+        else if (status == 22) {
+            var trprf = document.getElementById('prf-place');
+            if (trprf) {
+                trprf.style.display = '';
+            }
+            if (prf2) {
+                prf2.removeAttribute("hidden");
+                var children = prf2.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].style.display = ''; // Remove the inline display style
+                }
+            }
+        }
+        else if (status == 23) {
+            if (ttd1) {
+                ttd1.removeAttribute("hidden");
+                var children = ttd1.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].style.display = ''; // Remove the inline display style
+                }
+                var sectionToHide = ttd1.querySelector('section.ctrFile');
+                if (sectionToHide) {
+                    sectionToHide.style.display = 'none';
+                }
+            }
+            if (ttd2) {
+                ttd2.removeAttribute("hidden");
+                var children = ttd2.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].style.display = ''; // Remove the inline display style
+                }
+            }
+            if (prf1) {
+                div.setAttribute("hidden", "true");
+            }
+            if (prf2) {
+                prf2.setAttribute("hidden", "true");
+            }
+        }
+    }
+
+    function formDefaultApprove() {
+        $('#thn_usul').val("");
+        $('#judul_usul').val("");
+        $('#nilai_abi').val("");
+        $('#fungsi_usul').val("").trigger('change');
+
+        $('#others_file').ace_file_input('reset_input');
+
+        $('#tabs a[href="#info"]').tab('show');
+    }
+
+    function returnHomeApprove() {
+        formDefaultApprove();
+
+        var category = '@category';
+        if (category == "BD") {
+            category = "bd";
+        }
+        else {
+            category = "NonBD";
+        }
+
+        window.location.replace(URL_PTPR + "/" + '/FID/vFID?category=' + category);
+    }
+
+    function checkSignApprove(flag, category) {
+       
+        debugger
+        if (category == 'BD') {
+            
+
+            if (flag == 'SIG1') {
+                var imgElement = document.getElementById("img-bd-prf-ps1");
+                var imgElement2 = document.getElementById("img-bd-ttd-ps1");
+                if (imgElement.src == "" && imgElement2.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+            }
+            else if (flag == 'SIG2') {
+                var imgElement = document.getElementById("img-bd-prf-ps1");
+                var imgElement2 = document.getElementById("img-bd-ttd-ps1");
+                if (imgElement.src != "" && imgElement2.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+            }
+            else if (flag == 'SIG3') {
+                var imgElement = document.getElementById("img-bd-prf-ps2");
+                var imgElement2 = document.getElementById("img-bd-ttd-ps2");
+                if (imgElement.src == "" && imgElement2.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+            }
+            else if (flag == 'SIG4') {
+                var imgElement = document.getElementById("img-bd-prf-ps2");
+                var imgElement2 = document.getElementById("img-bd-ttd-ps2");
+                if (imgElement.src != "" && imgElement2.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+            }
+        }
+        else {
+            if (flag == 'SIG1') {
+                var imgpsttd1 = document.getElementById("img-nbd-ttd-ps1");
+                var imgpsprf1 = document.getElementById("img-nbd-prf-ps1");
+                var imgcbattd1 = document.getElementById("img-cba-ttd1");
+                var imgcbaprf1 = document.getElementById("img-prf-cba-1");
+
+                if (imgpsttd1.src == "" && imgpsprf1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS / CBA!.");
+
+                    return true;
+                }
+                if (imgcbattd1.src == "" && imgcbaprf1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS / CBA!.");
+
+                    return true;
+                }
+            }
+            if (flag == 'SIG2') {
+                var imgpsttd1 = document.getElementById("img-nbd-ttd-ps1");
+                var imgpsprf1 = document.getElementById("img-nbd-prf-ps1");
+                var imgcbattd1 = document.getElementById("img-cba-ttd1");
+                var imgcbaprf1 = document.getElementById("img-prf-cba-1");
+
+                if (imgpsprf1.src != "" && imgpsttd1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+                if (imgcbaprf1.src != "" && imgcbattd1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS!.");
+
+                    return true;
+                }
+            }
+            if (flag == 'SIG3') {
+                var imgpsttd1 = document.getElementById("img-nbd-ttd-ps2");
+                var imgpsprf1 = document.getElementById("img-nbd-prf-ps2");
+                var imgcbattd1 = document.getElementById("img-cba-ttd2");
+                var imgcbaprf1 = document.getElementById("img-prf-cba-2");
+
+                if (imgpsttd1.src == "" && imgpsprf1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS / CBA!.");
+
+                    return true;
+                }
+                if (imgcbattd1.src == "" && imgcbaprf1.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS / CBA!.");
+
+                    return true;
+                }
+            }
+            if (flag == 'SIG4') {
+                imgElement = document.getElementById("img-nbd-ttd-ps2");
+                imgElement2 = document.getElementById("img-cba-ttd2");
+
+                if (imgElement.src == "" || imgElement2.src == "") {
+                    clear_wait();
+                    w2alert("Silahkan Masukan Tanda Tangan Pada Dokumen PS / CBA!.");
+
+                    return true;
+                }
+            }
+        }
+        clear_wait();
+        return false;
+    }
+</script>

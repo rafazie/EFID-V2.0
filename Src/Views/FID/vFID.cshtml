@@ -1,0 +1,708 @@
+﻿@using System.Web.Configuration;
+@using SimplifikasiFID.Models;
+@model string
+@{
+    var category = Model;
+    if (category == "bd")
+    {
+        category = "BD";
+    }
+    else
+    {
+        category = "NON-BD";
+    }
+    ViewBag.Title = "vFID";
+    ViewBag.ActiveMenu = "FID";
+    ViewBag.ActiveMenuCaption = "Usulan Investasi " + category;
+    ViewBag.Icon = "<i class=\"ace-icon fa fa-folder\"></i>";
+    ViewBag.SideMenu = "Yes";
+
+}
+@{
+    SimplyFIDEntities dbs = new SimplyFIDEntities();
+
+    var UserId = User.Identity.Name.ToString();
+
+    var role = dbs.M_User.Where(x => x.username.Equals(UserId)).Select(x => x.flag).FirstOrDefault();
+    var role2 = dbs.V_FID.AsNoTracking().FirstOrDefault();
+
+    int All = 0;
+    int rtc = 0;
+    int done = 0;
+
+    if (role == 1)
+    {
+        All = dbs.V_FID.Where(x => x.Jenisfid == category && x.CreatedBy == UserId).Count();
+        rtc = (from b in dbs.V_FID where (b.Jenisfid == category && (b.sts == 4 || b.sts == 14) && b.CreatedBy == UserId) select b).Count();
+        done = (from l in dbs.V_FID where (l.Jenisfid == category && l.sts == 11 && l.CreatedBy == UserId) select l).Count();
+    }
+    else
+    {
+        All = (from a in dbs.V_FID where (a.Jenisfid == category) select a).Count();
+        rtc = (from b in dbs.V_FID where (b.Jenisfid == category && (b.sts == 4 || b.sts == 14)) select b).Count();
+        done = (from l in dbs.V_FID where (l.Jenisfid == category && l.sts == 11) select l).Count();
+    }
+
+    var query = dbs.V_FID.AsQueryable();
+
+    int draft = query.Where(x => x.sts == 0 && x.Jenisfid == category).Count();
+    int baru =  query.Where(x => x.sts == 1 && x.Jenisfid == category).Count();
+    int apprv = query.Where(x => x.sts == 2 && x.Jenisfid == category).Count();
+    int route = query.Where(x => x.sts == 3 && x.Jenisfid == category).Count();
+    int drfid = query.Where(x => x.sts == 13 && x.Jenisfid == category).Count();
+
+    int manbpd = 0;
+    int manfbs = 0;
+    int mancnl = 0;
+    int mancrpln = 0;
+
+    if (category == "BD")
+    {
+        manbpd = query.Where(g => g.sts == 5 && g.Jenisfid == category).Count();
+        manfbs = query.Where(g => g.sts == 6 && g.Jenisfid == category).Count();
+        mancnl = query.Where(g => g.sts == 7 && g.Jenisfid == category).Count();
+        mancrpln = query.Where(g => g.sts == 8 && g.Jenisfid == category).Count();
+    }
+    else
+    {
+        manbpd = query.Where(g => g.sts == 8 && (g.Jenisfid == category || g.Jenisfid == "Non BD")).Count();
+        manfbs = query.Where(g => g.sts == 9 && (g.Jenisfid == category || g.Jenisfid == "Non BD")).Count();
+        mancnl = query.Where(g => g.sts == 7 && (g.Jenisfid == category || g.Jenisfid == "Non BD")).Count();
+        mancrpln = query.Where(g => g.sts == 5 && (g.Jenisfid == category || g.Jenisfid == "Non BD")).Count();
+    }
+
+    int sign = (from k in dbs.V_FID where (k.Jenisfid == category && k.sts == 10) select k).Count();
+
+    var ROLES = new SimplifikasiFID.Classes.UserRoleProvider();
+
+    var getaccess = ROLES.GetAccessForUser(UserId);
+}
+
+
+<style>
+    #box_info_req_update {
+        text-align: center;
+        border: 0px dashed #dedede;
+        margin: 0px auto;
+        margin-top: 10px;
+        width: 85%;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+
+    #box_info_req_update_icon {
+        text-align: center;
+        padding: 10px;
+        border: 0px dashed #dedede;
+        margin: 5px auto;
+        margin-top: 1%;
+    }
+
+    .icon_short_cut {
+        border: 1px dashed #dedede;
+        padding: 10px;
+        width: 80px;
+        height: 150px;
+        border-radius: 2%;
+        display: inline-table;
+        margin-left: 2px;
+        font-size: 11px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 1%;
+        background: none;
+    }
+
+        .icon_short_cut i {
+            font-size: 25px !important;
+        }
+
+
+        .icon_short_cut:hover {
+            opacity: 0.50;
+            border: 1px solid yellowgreen;
+            background-color: white;
+        }
+
+    .box-mascot {
+        text-align: right;
+    }
+
+    .icon_short_cut i {
+        font-size: 35px;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #modal_usul .modal-dialog {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1%;
+        -webkit-box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+        box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+    }
+
+    #modal_usul .control-label {
+        font-size: 12px;
+    }
+
+
+    .round {
+        margin: auto;
+        font-size: 11px;
+        padding: 2px;
+        border-radius: 25px;
+        background: #dd1a1a;
+        width: 30px;
+        height: 20px;
+    }
+</style>
+
+
+<div class="row" id="box_info_req_update">
+
+    <div class="col-sm-4 box-mascot" style="padding-top:5%;">
+        <img src="../../../Content/Images/logo_ptm.png" class="logo_welcome" style="width:40%;">
+    </div>
+    <div class="col-sm-8">
+        <div style="text-align:left;font-size:12px;padding-top:5%;">
+            <span style="font-size:20px;">
+                Hi,.. @User.Identity.Name.ToString() <br />
+                Selamat datang di <span style="font-weight:bold;color:cornflowerblue;font-size:30px;">E-FID </span> <br />Simplifikasi Sistem FID Pertamina Retail
+                <br />Usulan Investasi @category
+            </span><br /><br /><br />
+            Terima kasih telah menggunakan E-FID<br />
+            Gunakan fitur-fitur yang telah kami sediakan dibawah ini<br />Semoga pengalaman Anda dalam menggunakan ini menjadi lebih menyenangkan. <br />
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div id="box_info_req_update_icon">
+
+    <div id="myBtn" class="icon_short_cut" onclick="open_shortcut('OnlineForm/PengajuanUsulan?category=@Model')" @*data-toggle="modal" data-target="#modal_usul" data-backdrop="static" data-keyboard="false"*@>
+        <i class="fa fa-plus-square" aria-hidden="true" style="color:#fdcd45;"></i><br><br>
+        <span class="lbl bigger-100">Add New</span>
+    </div>
+
+    <div id="btnReject" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=4&category=@category')">
+        <i class="fa fa-ban" aria-hidden="true" style="color:red;"></i><br><br>
+        <span class="lbl bigger-100">Revice To Conceptor</span><br><br><br>
+        <p class="round" style="color:white;"><b> @rtc </b></p>
+    </div>
+
+    <div id="btnList" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=&category=@category')">
+        <i class="fa fa-list-ul" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">List Document</span><br><br><br>
+        <p class="round" style="color:white"><b> @All </b></p>
+    </div>
+
+    <div id="btnDraft" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=0&category=@category')">
+        <i class="fa fa-files-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Draft Usulan</span><br><br><br>
+        <p class="round" style="color:white"><b> @draft </b></p>
+    </div>
+
+    <div id="btnNew" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=1&category=@category')">
+        <i class="fa fa-files-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Usulan Baru</span><br><br><br>
+        <p class="round" style="color:white"><b> @baru </b></p>
+    </div>
+
+    <div id="btnApprove" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=2&category=@category')">
+        <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Approve Usulan</span><br><br><br>
+        <p class="round" style="color:white"><b> @apprv </b></p>
+    </div>
+
+    <div id="btnRouting" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=3&category=@category')">
+        <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Routing Persetujuan FID</span><br><br>
+        <p class="round" style="color:white"><b> @route </b></p>
+    </div>
+
+    <div id="btnDraftFID" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=13&category=@category')">
+        <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Draft FID</span><br /><br><br><br>
+        <p class="round" style="color:white"><b> @drfid </b></p>
+    </div>
+
+    <div id="btnManbpd" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=90&category=@category')">
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Approve. Man BPD</span><br><br><br>
+        <p class="round" style="color:white"><b> @manbpd </b></p>
+    </div>
+
+    <div id="btnManfbs" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=91&category=@category')">
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Approve. Man FBS</span><br><br><br>
+        <p class="round" style="color:white"><b> @manfbs </b></p>
+    </div>
+
+    <div id="btnMancnl" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=7&category=@category')">
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Approve. Man Corsec & Legal</span>
+        <p class="round" style="color:white"><b> @mancnl </b></p>
+    </div>
+
+    <div id="btnMancorplan" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=92&category=@category')">
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Approve. Man CSPRM</span><br><br>
+        <p class="round" style="color:white"><b> @mancrpln </b></p>
+    </div>
+
+    <div id="btnPerisai" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=10&category=@category')">
+        <i class="fa fa-pencil" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">Sign Perisai</span><br><br><br>
+        <p class="round" style="color:white"><b> @sign </b></p>
+    </div>
+
+    <div id="btnDone" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=11&category=@category')">
+        <i class="fa fa-check" aria-hidden="true" style="color: #18fc01;"></i><br><br>
+        <span class="lbl bigger-100">Final FID</span><br /><br><br><br>
+        <p class="round" style="color:white"><b> @done </b></p>
+    </div>
+
+</div>
+
+
+
+<!-- Modal ALlert-->
+<div class="modal fade" id="modal_alert" role="dialog" style="margin-top:5%;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:#65b0b9;color:White;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <p style="color:#151928">ALERT!</p>
+            </div>
+
+            <div class="modal-body" id="alert_msg">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    $('#modal_usul .modal-dialog').css('margin-top', "5%");
+    $('#ps_file').ace_file_input();
+    $('#fs_file').ace_file_input();
+    $('#rr_file').ace_file_input();
+    $('#others_file').ace_file_input();
+    $('#cba_file').ace_file_input();
+
+    hideAll();
+    set_visible();
+    hideZero();
+
+    function onlyNumberKey(evt) {
+
+        // Only ASCII character in that range allowed
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+            return false;
+        return true;
+    }
+
+
+    var button_action = '';
+    var button_cancel = '';
+
+    @if (ROLES.CheckAllowExtendAccess(User.Identity.Name, 120))
+    {
+        <text>
+        button_action = '<button type="button" class="btn btn-info" onclick="saveUsulan(\'DRAFT\')">Save As Draft</button>'
+        </text>
+    }
+
+    button_cancel = '<button type="button" class="btn btn-default" data-dismiss="modal" onclick="formDefault()">Cancel</button>';
+
+    $('#fid_footer').html(button_action + button_cancel);
+
+
+
+    $('#jenis_usul').change(function () {
+        var jenis = $('#jenis_usul').val();
+
+        if (jenis == "BD") {
+            $('#div_ps').show();
+            $('#div_other').show();
+            $('#div_rr').show();
+            $('#div_fs').show();
+
+            $('#div_cba').hide();
+        }
+        else if (jenis == "Non BD") {
+            $('#div_ps').show();
+            $('#div_other').show();
+            $('#div_cba').show();
+
+            $('#div_rr').hide();
+            $('#div_fs').hide();
+        }
+        else {
+            $('#div_ps').hide();
+            $('#div_cba').hide();
+            $('#div_others').hide();
+            $('#div_rr').hide();
+            $('#div_fs').hide();
+        }
+
+
+    });
+
+    function saveUsulan(Flag_update) {
+
+        var jenis = $('#jenis_usul').val();
+
+        if (checkText("judul_usul", "Judul Usulan Tidak Boleh Kososng !", 1)) return;
+        if (checkText("nilai_abi", "Nilai ABI Tidak Boleh Kosong !", 1)) return;
+        if (checkText("thn_usul", "Tahun Anggaran Tidak Boleh Kosong !", 1)) return;
+        if (checkText("fungsi_usul", "Fungsi Pengusul Tidak Boleh Kosong !", 1)) return;
+        if (checkText("jenis_usul", "Jenis Tidak Boleh Kosong !", 1)) return;
+
+
+        //if (jenis == "BD") {
+        //    if (checkFiles("ps_file", "Dokumen PS Wajib Diupload !")) return;
+        //    if (checkFiles("fs_file", "Dokumen FS Wajib Diupload !")) return;
+        //    if (checkFiles("rr_file", "Dokumen Risk Resgister Wajib Diupload !")) return;
+        //}
+        //else if (jenis == "Non BD") {
+        //    if (checkFiles("ps_file", "Dokumen PS Wajib Diupload !")) return;
+        //    if (checkFiles("cba_file", "Dokumen CBA Wajib Diupload !")) return;
+        //}
+
+        //if (checkText("email_txt", "Email Tidak Boleh Kosong !", 3)) return;
+
+        var Nominal = $("#nilai_abi").val();
+        Nominal = Nominal.replace(/,/g, '');
+
+
+        var dataUsulan = new FormData();
+        dataUsulan.append('JudulFID', $('#judul_usul').val());
+        dataUsulan.append('ThnAng', $('#thn_usul').val());
+        dataUsulan.append('NilaiABI', Nominal);
+        dataUsulan.append('FungsiPengusul', $('#fungsi_usul').val());
+        dataUsulan.append('JenisFID', $('#jenis_usul').val());
+        dataUsulan.append('UserName', '@User.Identity.Name.ToString()');
+        dataUsulan.append('Email', $('#email_txt').val());
+        dataUsulan.append('Jabatan', 'User');
+        dataUsulan.append('Flag_update', Flag_update);
+
+        //var filePS = $("#ps_file").get(0);
+        //var filesPS = filePS.files;
+        //for (var i = 0; i < filesPS.length; i++) {
+        //    dataUsulan.append(filesPS[i].name, filesPS[i]);
+        //}
+
+        //var fileFS = $("#fs_file").get(0);
+        //var filesFS = fileFS.files;
+        //for (var i = 0; i < filesFS.length; i++) {
+        //    dataUsulan.append(filesFS[i].name, filesFS[i]);
+        //}
+
+        //var fileCBA = $("#cba_file").get(0);
+        //var filesCBA = fileCBA.files;
+        //for (var i = 0; i < filesCBA.length; i++) {
+        //    dataUsulan.append(filesCBA[i].name, filesCBA[i]);
+        //}
+
+        //var fileRR = $("#rr_file").get(0);
+        //var filesRR = fileRR.files;
+        //for (var i = 0; i < filesRR.length; i++) {
+        //    dataUsulan.append(filesRR[i].name, filesRR[i]);
+        //}
+
+        //var fileOTH = $("#others_file").get(0);
+        //var filesOTH = fileOTH.files;
+        //for (var i = 0; i < filesOTH.length; i++) {
+        //    dataUsulan.append(filesOTH[i].name, filesOTH[i]);
+        //}
+
+
+        render_wait();
+
+        var Simpan = $.ajax({
+            url: URL_PTPR + '/FID/SaveFID',
+            type: 'POST',
+            data: dataUsulan,
+            dataType: "json",
+            cache: false,
+            async: false,
+            contentType: false,
+            processData: false,
+        });
+
+        if (Simpan.responseJSON["Result"] != "Error") {
+            alert('Add Draft Usulan success !');
+
+            formDefault();
+            $('#myModal').modal('hide');
+            clear_wait();
+
+            window.location.replace(URL_PTPR + "/" + '/FID/vFID');
+        }
+        else {
+
+            alert('Add new FID failed, please try again !  ' + Simpan.responseJSON["Msg"]);
+
+            clear_wait();
+        }
+    }
+
+    function checkText(chkid, msg, tabs) {
+        if ($('#' + chkid).val() == "") {
+            alrt = '<p>' + msg + '</p>';
+
+            $('#alert_msg').html(alrt);
+            $('#modal_alert').modal("show");
+
+
+            if (tabs == 1) {
+                $('#tabs a[href="#info"]').tab('show');
+            }
+            else if (tabs == 3) {
+                $('#tabs a[href="#email"]').tab('show');
+
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    function checkFiles(chkid, msg) {
+
+        if (document.getElementById(chkid).files.length == 0) {
+            alrt = '<p>' + msg + '</p>';
+
+            $('#alert_msg').html(alrt);
+            $('#modal_alert').modal("show");
+
+            $('#tabs a[href="#fid_file"]').tab('show');
+
+            return true;
+        }
+        return false;
+    }
+
+    function checktypefiles(sender, uplname) {
+        var pdf = ".pdf";
+        var fileExt = sender.value.toLowerCase();
+        fileExt = fileExt.substring(fileExt.lastIndexOf('.'));
+        if (pdf.indexOf(fileExt) < 0) {
+            alert("Invalid file selected, valid files are of " +
+                pdf.toString() + " types.");
+            var file_input = jQuery(uplname);
+            file_input.ace_file_input('reset_input');
+            return false;
+        }
+        else return true;
+    }
+
+    function formDefault() {
+        $('#judul_usul').val("");
+        $('#nilai_abi').val("");
+        $('#thn_usul').val("");
+        $('#judul_usul').val("");
+        $('#jenis_usul').val("").trigger('change');
+        $('#fungsi_usul').val("").trigger('change');
+
+        $('#email_txt').val("");
+
+        $('#ps_file').ace_file_input('reset_input');
+        $('#fs_file').ace_file_input('reset_input');
+        $('#cba_file').ace_file_input('reset_input');
+        $('#rr_file').ace_file_input('reset_input');
+        $('#others_file').ace_file_input('reset_input');
+
+        $('#tabs a[href="#info"]').tab('show');
+    }
+
+    $('#gridCatatan').w2grid({
+        name: 'gridCatatan',
+        header: 'Daftar Catatan',
+        /*url: url,*/
+        show: {
+            footer: true,
+            lineNumbers: true,
+            toolbarReload: true,
+        },
+        columns: [
+            { field: 'CatatanID', hidden: true },
+            { field: 'NoFID', caption: 'No FID', size: '170px' },
+            { field: 'Catatan', caption: 'NOTE', size: '250px' },
+            { field: 'CreatedDate', caption: 'Created Date', size: '180px' },
+            { field: 'CreatedUser', caption: 'Create By.', size: '100px' },
+        ],
+        onDelete: function (event) {
+            /* onDeleteFromGrid1(event, grname, tempdel);*/
+        },
+        onSelect: function (event) {
+            //var record = this.get(event.recid);
+            //$("#note_process_view").val(record.Catatan);
+
+        },
+        onReload: function (event) {
+            /* w2ui[grname].load(url);*/
+        },
+    });
+
+    function set_visible(role) {
+
+        @if (ROLES.CheckAllowExtendAccess(UserId, 121))
+            {
+                <text>
+                $('#myBtn').show();
+                $('#btnReject').show();
+                $('#btnList').show();
+                $('#btnDraft').show();
+                $('#btnNew').show();
+                $('#btnDone').show();
+                </text>
+            }
+
+        @if (ROLES.CheckAllowExtendAccess(UserId, 122) || ROLES.CheckAllowExtendAccess(UserId, 123) || ROLES.CheckAllowExtendAccess(UserId, 126)
+                || ROLES.CheckAllowExtendAccess(UserId, 127))
+            {
+                 <text>
+                    $('#myBtn').show();
+                    $('#btnReject').show();
+                    $('#btnList').show();
+                    $('#btnDraft').show();
+                    $('#btnNew').show();
+                    $('#btnApprove').show();
+                    $('#btnRouting').show();
+                    $('#btnDraftFID').show();
+                    $('#btnPerisai').show();
+                    $('#btnDone').show();
+                </text>
+        }
+
+         @if (ROLES.CheckAllowExtendAccess(UserId, 128))
+            {
+                  <text>
+                $('#btnList').show();
+                $('#btnManbpd').show();
+                $('#btnDone').show();
+                </text>
+            }
+        else if (ROLES.CheckAllowExtendAccess(UserId, 160))
+            {
+                 <text>
+                $('#btnList').show();
+                $('#btnManfbs').show();
+                $('#btnDone').show();
+                </text>
+            }
+       else if (ROLES.CheckAllowExtendAccess(UserId, 161))
+            {
+                 <text>
+                $('#btnList').show();
+                $('#btnMancnl').show();
+                $('#btnDone').show();
+                </text>
+            }
+        else if (ROLES.CheckAllowExtendAccess(UserId, 162))
+            {
+                 <text>
+                $('#btnList').show();
+                $('#btnMancorplan').show();
+                $('#btnDone').show();
+                </text>
+            }
+
+        @if (ROLES.CheckAllowExtendAccess(UserId, 121) && ROLES.CheckAllowExtendAccess(UserId, 122) && ROLES.CheckAllowExtendAccess(UserId, 123) && ROLES.CheckAllowExtendAccess(UserId, 126)
+                && ROLES.CheckAllowExtendAccess(UserId, 127) && ROLES.CheckAllowExtendAccess(UserId, 128) && ROLES.CheckAllowExtendAccess(UserId, 160)
+                && ROLES.CheckAllowExtendAccess(UserId, 161) && ROLES.CheckAllowExtendAccess(UserId, 162))
+            {
+            <text>
+                $('#myBtn').show();
+                $('#btnReject').show();
+                $('#btnList').show();
+                $('#btnDraft').show();
+                $('#btnNew').show();
+                $('#btnApprove').show();
+                $('#btnRouting').show();
+                $('#btnDraftFID').show();
+                $('#btnManbpd').show();
+                $('#btnManfbs').show();
+                $('#btnMancnl').show();
+                $('#btnMancorplan').show();
+                $('#btnPerisai').show();
+                $('#btnDone').show();
+            </text>
+            }
+
+    }
+
+    function hideAll() {
+        $('#myBtn').hide();
+        $('#btnReject').hide();
+        $('#btnList').hide();
+        $('#btnDraft').hide();
+        $('#btnNew').hide();
+        $('#btnApprove').hide();
+        $('#btnRouting').hide();
+        $('#btnDraftFID').hide();
+        $('#btnManbpd').hide();
+        $('#btnManfbs').hide();
+        $('#btnMancnl').hide();
+        $('#btnMancorplan').hide();
+        $('#btnPerisai').hide();
+        $('#btnDone').hide();
+    }
+
+    function hideZero() {
+        if (@rtc == 0) {
+            $('#btnReject').hide();
+        }
+        if (@draft == 0) {
+            $('#btnDraft').hide();
+        }
+        if (@baru == 0) {
+            $('#btnNew').hide();
+        }
+        if (@apprv == 0) {
+            $('#btnApprove').hide();
+        }
+        if (@route == 0) {
+            $('#btnRouting').hide();
+        }
+        if (@drfid == 0) {
+            $('#btnDraftFID').hide();
+        }
+        if (@manbpd == 0) {
+            $('#btnManbpd').hide();
+        }
+        if (@manfbs == 0) {
+            $('#btnManfbs').hide();
+        }
+        if (@mancnl == 0) {
+            $('#btnMancnl').hide();
+        }
+        if (@mancrpln == 0) {
+            $('#btnMancorplan').hide();
+        }
+        if (@sign == 0) {
+            $('#btnPerisai').hide();
+        }
+        if (@done == 0) {
+            $('#btnDone').hide();
+        }
+    }
+</script>
+

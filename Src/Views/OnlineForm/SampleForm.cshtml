@@ -1,0 +1,218 @@
+﻿@{
+    ViewBag.Title = "Sample Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.ActiveMenu = "Sample Form";
+    ViewBag.ActiveMenuCaption = "Sample Form";
+    ViewBag.Icon = "<i class=\"ace-icon fa fa-list\"></i>";
+    ViewBag.SideMenu = "Yes";
+}
+
+<style>
+
+    .file-insert-none .ace-file-input .ace-file-container.selected + .remove {
+        display: none;
+    }
+
+    .preview-container {
+        margin-top: 20px;
+    }
+
+        .preview-container img {
+            max-width: 100%;
+            max-height: 500px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+    .preview-ttd {
+        margin-top: 20px;
+    }
+
+        .preview-ttd img {
+            max-width: 50%;
+            max-height: 150px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+    .preview-paraf img {
+        /*          display: inline-block;*/
+        width: auto;
+        /*            max-width: 10%;*/
+        max-height: 30px;
+        /*margin-left: 10px;
+            margin-bottom: 10px;*/
+    }
+
+    .content-container-paraf {
+        /* Flex container to align items */
+        display: inline-flex;
+        align-items: center; /* Center items vertically */
+    }
+
+    .center-text {
+        /* Center text horizontally */
+        text-align: center;
+    }
+
+    .text-content {
+        margin-left: 10px;
+        /* Flex container to align items */
+        /*display: flex;*/
+        /*align-items: center;*/ /* Center items vertically */
+    }
+
+        .text-content p {
+            margin: 0; /* Remove default margin */
+        }
+
+    .remove-button {
+        display: none;
+        cursor: pointer;
+        color: red;
+    }
+
+    .ctrFile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div>
+    <form>
+        <div id="ttd-ast-mgr-cba" class="form-group" style="margin-top:5%;">
+            <section class="ctrFile col-md-12">
+                <div class="col-md-10 control-label">
+                    <input multiple="" class="form-control" type="file" id="spl1" accept=".jpg" onchange="addImagesspl('spl1', 'img-spl1', 'remove-spl1')" />
+                </div>
+                <div class="col-md-2">
+                    <span class="fa fa-trash remove-button" id="remove-spl1" onclick="removeImagesspl('remove-spl1', 'img-spl1', 'spl1')"> Remove</span>
+                </div>
+            </section>
+            <div class="col-md-12 preview-ttd ctrFile" style="margin-top: 0px;">
+                <img id="img-spl1" src="">
+            </div>
+        </div>
+        <div id="ttd-ast-mgr-cba" class="form-group" style="margin-top:5%;">
+            <section class="ctrFile col-md-12">
+                <div class="col-md-10 control-label">
+                    <input multiple="" class="form-control" type="file" id="prf-ps-1" accept=".jpg" onchange="addImagesspl('prf-ps-1', 'img-prf-ps-1', 'remove-prf-ps-1')" />
+                </div>
+                <div class="col-md-2">
+                    <span class="fa fa-trash remove-button" id="remove-prf-ps-1" onclick="removeImagesspl('remove-prf-ps-1', 'img-prf-ps-1', 'prf-ps-1')"> Remove</span>
+                </div>
+            </section>
+            <div class="col-md-12 preview-ttd ctrFile" style="margin-top: 0px;">
+                <img id="img-prf-ps-1" src="">
+            </div>
+        </div>
+        <div id="ttd-ast-mgr-cba" class="form-group" style="margin-top:5%;">
+            <section class="ctrFile col-md-12">
+                <div class="col-md-10 control-label">
+                    <input multiple="" class="form-control" type="file" id="spl2" accept=".jpg" onchange="addImagesspl('spl2', 'img-spl2', 'remove-spl2')" />
+                </div>
+                <div class="col-md-2">
+                    <span class="fa fa-trash remove-button" id="remove-spl2" onclick="removeImagesspl('remove-spl2', 'img-spl2', 'spl2')"> Remove</span>
+                </div>
+            </section>
+            <div class="col-md-12 preview-ttd ctrFile" style="margin-top: 0px;">
+                <img id="img-spl2" src="">
+            </div>
+        </div>
+        <div id="ttd-ast-mgr-cba" class="form-group" style="margin-top:5%;">
+            <section class="ctrFile col-md-12">
+                <div class="col-md-10 control-label">
+                    <input multiple="" class="form-control" type="file" id="prf-ps-2" accept=".jpg" onchange="addImagesspl('prf-ps-2', 'img-prf-ps-2', 'remove-prf-ps-2')" />
+                </div>
+                <div class="col-md-2">
+                    <span class="fa fa-trash remove-button" id="remove-prf-ps-2" onclick="removeImagesspl('remove-prf-ps-2', 'img-prf-ps-2', 'prf-ps-2')"> Remove</span>
+                </div>
+            </section>
+            <div class="col-md-12 preview-ttd ctrFile" style="margin-top: 0px;">
+                <img id="img-prf-ps-2" src="">
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <button class="btn btn-primary" style="margin-left:30px;" onclick="saveimg()">SAVE</button>
+    </form>
+</div>
+
+<script>
+    $('#spl1').ace_file_input();
+    $('#prf-ps-1').ace_file_input();
+    $('#spl2').ace_file_input();
+    $('#prf-ps-2').ace_file_input();
+
+    function saveimg() {
+        var dataimg = new FormData();
+
+        var fileOTH = $("#spl1").get(0);
+        var filesOTH = fileOTH.files;
+        for (var i = 0; i < filesOTH.length; i++) {
+            dataimg.append('ttd-ps-1', filesOTH[i]);
+        }
+
+        var filePrf1 = $("#prf-ps-1").get(0);
+        var filesPrf1 = filePrf1.files;
+        for (var i = 0; i < filesPrf1.length; i++) {
+            dataimg.append('prf-ps-1', filesPrf1[i]);
+        }
+
+        var ttdps2 = $("#spl2").get(0);
+        var filettdps2 = ttdps2.files;
+        for (var i = 0; i < filettdps2.length; i++) {
+            dataimg.append('ttd-ps-2', filettdps2[i]);
+        }
+
+        var filePrf2 = $("#prf-ps-2").get(0);
+        var filesPrf2 = filePrf2.files;
+        for (var i = 0; i < filesPrf2.length; i++) {
+            dataimg.append('prf-ps-2', filesPrf2[i]);
+        }
+
+        var Simpan = $.ajax({
+            //url: URL_PTPR + '/FID/SaveFID',
+            url: URL_PTPR + '/OnlineForm/AddSignature',
+            type: 'POST',
+            data: dataimg,
+            dataType: "json",
+            cache: false,
+            async: false,
+            contentType: false,
+            processData: false,
+        });
+    }
+
+    function addImagesspl(filename, imgFrame, btnRemove) {
+
+        $('#' + filename).on('change', function () {
+            var file = this.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $('#' + imgFrame).attr('src', event.target.result);
+                    /*$('.remove-button').css('display', 'inline');*/
+                    $('#' + btnRemove).css('display', 'inline');
+
+                    var base64String = event.target.result.split(',')[1];
+                    console.log("Ini Base64string nya = " + base64String);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+    }
+
+    function removeImagesspl(btnDel, imgFrame, filename) {
+
+        $('#' + imgFrame).attr('src', '');
+        $('#' + filename).ace_file_input('reset_input');
+        $('#' + btnDel).css('display', 'none');
+
+    }
+</script>

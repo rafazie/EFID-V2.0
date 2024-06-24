@@ -1,52 +1,229 @@
-﻿@using EFID_V2.Models;
-@model List<vFID>;
+﻿@using ServiceSSO;
+@model string;
+@{
+    ViewBag.Title = "List FID";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.ActiveMenu = "ListFID";
+    ViewBag.ActiveMenuCaption = "List Pengajuan Investasi " + Model;
+    ViewBag.Icon = "<i class=\"ace-icon fa fa-list\"></i>";
+    ViewBag.SideMenu = "Yes";
 
-<div>
-    <div class="table-responsive">
-        <table id="dataTableExample" class="table table-hover mb-0 mt-4">
-            <thead>
-                <tr>
-                    <th class="pt-0">Status</th>
-                    <th class="pt-0">Nomor FID</th>
-                    <th class="pt-0">Judul FID</th>
-                    <th class="pt-0">Thn. Anggaran</th>
-                    <th class="pt-0">Nilai ABI</th>
-                    <th class="pt-0">Fungsi Pengusul</th>
-                    <th class="pt-0">Created By</th>
-                    <th class="pt-0">Created Date</th>
-                    <th class="pt-0">Update User</th>
-                    <th class="pt-0">Update Date</th>
-                    <th class="pt-0">SLA Default</th>
-                    <th class="pt-0">Realisasi SLA</th>
-                </tr>
-            </thead>
-            <tbody>
-                @{
-                    foreach (var list in Model)
-                    {
-                        <tr onclick="showAlert()">
-                            <td class="text-center">@Html.Raw(list.Status)</td>
-                            <td class="text-left">@list.NoFID</td>
-                            <td>@list.Judulfid</td>
-                            <td>@list.TahunAnggaran</td>
-                            <td>@String.Format("{0:n0}", list.NilaiABI)</td>
-                            <td>@list.Fungsipengusul</td>
-                            <td>@list.CreatedBy</td>
-                            <td>@DateTime.Parse(list.CreatedDate.Value.ToString("dd-MMMM-yyyy"))</td>
-                            <td>@list.UpdateUser</td>
-                            <td>@DateTime.Parse(list.UpdateDate.Value.ToString("dd-MMMM-yyyy"))</td>
-                            <td>@list.SlaDefault</td>
-                            <td>@list.SlaRealisasi</td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
+    var userId = Context.User.FindFirst(x => x.Type == "UserId");
+}
+@{
+    SSOWSSoapClient _sso = new SSOWSSoapClient(0);
+}
+
+
+<style>
+    #box_info_req_update {
+        text-align: center;
+        border: 0px dashed #dedede;
+        margin: 0px auto;
+        margin-top: 10px;
+        width: 85%;
+        font-size: 13px;
+        border-radius: 5px;
+    }
+
+
+    #box_info_req_update_icon {
+        text-align: center;
+        padding: 10px;
+        border: 0px dashed #dedede;
+        margin: 5px auto;
+        margin-top: 1%;
+    }
+
+    .icon_short_cut {
+        border: 1px dashed #dedede;
+        padding: 10px;
+        width: 80px;
+        height: 150px;
+        border-radius: 2%;
+        display: inline-table;
+        margin-left: 2px;
+        font-size: 11px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-bottom: 1%;
+        background: none;
+    }
+
+        .icon_short_cut i {
+            font-size: 25px !important;
+        }
+
+
+        .icon_short_cut:hover {
+            opacity: 0.50;
+            border: 1px solid yellowgreen;
+            background-color: white;
+        }
+
+    .box-mascot {
+        text-align: right;
+    }
+
+    .icon_short_cut i {
+        font-size: 35px;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #modal_usul .modal-dialog {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1%;
+        -webkit-box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+        box-shadow: -1px 11px 48px 3px rgba(0,0,0,0.75);
+    }
+
+    #modal_usul .control-label {
+        font-size: 12px;
+    }
+
+
+    .round {
+        margin: auto;
+        font-size: 11px;
+        padding: 2px;
+        border-radius: 25px;
+        background: #dd1a1a;
+        width: 30px;
+        height: 20px;
+    }
+
+    .blc {
+        color: black;
+    }
+</style>
+
+<div class="row" id="box_info_req_update">
+
+    <div class="col-sm-4 box-mascot" style="padding-top:5%;">
+        <img src="~/lib/Images/logo_ptm.png" class="logo_welcome" style="width:40%;">
+    </div>
+    <div class="col-sm-8">
+        <div style="text-align:left;font-size:12px;padding-top:5%;">
+            <span style="font-size:20px;">
+                Hi,.. @userId.Value <br />
+                Selamat datang di <span style="font-weight:bold;color:cornflowerblue;font-size:30px;">E-FID </span> <br />Simplifikasi Sistem FID Pertamina Retail
+            </span><br /><br /><br />
+            Terima kasih telah menggunakan E-FID<br />
+            Gunakan fitur-fitur yang telah kami sediakan dibawah ini<br />Semoga pengalaman Anda dalam menggunakan ini menjadi lebih menyenangkan. <br />
+        </div>
     </div>
 </div>
 
-<script>
-    function showAlert() {
-        alert("Ini Row Yang di Klik");
+<div id="box_info_req_update_icon">
+
+    <div id="btnList" class="icon_short_cut" onclick="open_shortcut('FID/ListFID')">
+        <i class="fa fa-list-ul" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+        <span class="lbl bigger-100">List Document</span><br><br><br>
+        <p class="round" style="color:white"><b> @* @All *@ </b></p>
+    </div>
+
+    @{
+        if (_sso.GetAccesExtendAsync(userId.Value, 121).Result.Body.GetAccesExtendResult)
+        {
+            <a id="myBtn" class="icon_short_cut blc" data-toggle="modal" data-target="#modal_usul" data-backdrop="static" data-keyboard="false">
+                <i class="fa fa-plus-square" aria-hidden="true" style="color:#fdcd45;"></i><br><br>
+                <span class="lbl bigger-100">Add New</span>
+            </a>
+
+            <div id="btnReject" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=4')">
+                <i class="fa fa-ban" aria-hidden="true" style="color:red;"></i><br><br>
+                <span class="lbl bigger-100">Revice To Conceptor</span><br><br><br>
+                <p class="round" style="color:white;"><b> @* @rtc *@ </b></p>
+            </div>
+
+            <div id="btnDraft" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=0')">
+                <i class="fa fa-files-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Draft Usulan</span><br><br><br>
+                <p class="round" style="color:white"><b> @* @draft *@ </b></p>
+            </div>
+
+            <div id="btnNew" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=1')">
+                <i class="fa fa-files-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Usulan Baru</span><br><br><br>
+                <p class="round" style="color:white"><b> @* @baru  *@</b></p>
+            </div>
+
+            if (_sso.GetAccesExtendAsync(userId.Value, 122).Result.Body.GetAccesExtendResult || _sso.GetAccesExtendAsync(userId.Value, 123).Result.Body.GetAccesExtendResult ||
+            _sso.GetAccesExtendAsync(userId.Value, 126).Result.Body.GetAccesExtendResult || _sso.GetAccesExtendAsync(userId.Value, 127).Result.Body.GetAccesExtendResult)
+            {
+                <div id="btnApprove" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=2')">
+                    <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                    <span class="lbl bigger-100">Approve Usulan</span><br><br><br>
+                    <p class="round" style="color:white"><b> @* @apprv *@ </b></p>
+                </div>
+
+                <div id="btnRouting" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=3')">
+                    <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                    <span class="lbl bigger-100">Routing Persetujuan FID</span><br><br>
+                    <p class="round" style="color:white"><b> @* @route  *@</b></p>
+                </div>
+
+                <div id="btnDraftFID" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=13')">
+                    <i class="fa fa-search" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                    <span class="lbl bigger-100">Draft FID</span><br /><br><br><br>
+                    <p class="round" style="color:white"><b>@*  @drfid *@ </b></p>
+                </div>
+
+                <div id="btnPerisai" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=10')">
+                    <i class="fa fa-pencil" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                    <span class="lbl bigger-100">Sign Perisai</span><br><br><br>
+                    <p class="round" style="color:white"><b> @* @sign *@ </b></p>
+                </div>
+            }
+        }
+
+        if (_sso.GetAccesExtendAsync(userId.Value, 128).Result.Body.GetAccesExtendResult)
+        {
+            <div id="btnManbpd" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=90')">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Approve. Man BPD</span><br><br><br>
+                <p class="round" style="color:white"><b> @* @manbpd  *@</b></p>
+            </div>
+        }
+
+        if (_sso.GetAccesExtendAsync(userId.Value, 160).Result.Body.GetAccesExtendResult)
+        {
+            <div id="btnManfbs" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=91')">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Approve. Man FBS</span><br><br><br>
+                <p class="round" style="color:white"><b> @* @manfbs  *@</b></p>
+            </div>
+        }
+
+        if (_sso.GetAccesExtendAsync(userId.Value, 161).Result.Body.GetAccesExtendResult)
+        {
+            <div id="btnMancnl" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=7')">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Approve. Man Corsec & Legal</span>
+                <p class="round" style="color:white"><b> @* @mancnl  *@</b></p>
+            </div>
+        }     
+        
+        if (_sso.GetAccesExtendAsync(userId.Value, 162).Result.Body.GetAccesExtendResult)
+        {
+            <div id="btnMancorplan" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=92')">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#6eaad5;"></i><br><br>
+                <span class="lbl bigger-100">Approve. Man CSPRM</span><br><br>
+                <p class="round" style="color:white"><b> @* @mancrpln *@ </b></p>
+            </div>
+        }
+
     }
-</script>
+
+    <div id="btnDone" class="icon_short_cut" onclick="open_shortcut('FID/ListFID?sts=11')">
+        <i class="fa fa-check" aria-hidden="true" style="color: #18fc01;"></i><br><br>
+        <span class="lbl bigger-100">Final FID</span><br /><br><br><br>
+        <p class="round" style="color:white"><b> @* @done *@ </b></p>
+    </div>
+
+</div>

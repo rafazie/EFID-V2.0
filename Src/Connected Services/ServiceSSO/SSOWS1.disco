@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
-  <contractRef ref="https://sso.pertaminaretail.com/SSOWS.asmx?wsdl" docRef="https://sso.pertaminaretail.com/SSOWS.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
-  <soap address="https://sso.pertaminaretail.com/SSOWS.asmx" xmlns:q1="SSO" binding="q1:SSOWSSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-  <soap address="https://sso.pertaminaretail.com/SSOWS.asmx" xmlns:q2="SSO" binding="q2:SSOWSSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
-</discovery>
